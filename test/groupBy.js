@@ -1,6 +1,6 @@
-var R = require('..');
-var eq = require('./shared/eq');
-var _isTransformer = require('../src/internal/_isTransformer');
+import R from '..';
+import eq from './shared/eq';
+import _isTransformer from '../src/internal/_isTransformer';
 
 
 describe('groupBy', function() {

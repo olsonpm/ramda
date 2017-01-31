@@ -1,8 +1,8 @@
-var S = require('sanctuary');
+import S from 'sanctuary';
 
-var R = require('..');
-var Id = require('./shared/Id');
-var eq = require('./shared/eq');
+import R from '..';
+import Id from './shared/Id';
+import eq from './shared/eq';
 
 
 describe('sequence', function() {

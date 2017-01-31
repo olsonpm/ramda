@@ -1,8 +1,8 @@
-var jsv = require('jsverify');
+import jsv from 'jsverify';
 
 var FMap = jsv._.FMap;
 
-module.exports = function(n, arb) {
+export default function(n, arb) {
   arb = jsv.utils.force(arb || jsv.json);
 
   return jsv.bless({
@@ -38,4 +38,4 @@ module.exports = function(n, arb) {
       return 'Function of arity' + f.length;
     }
   });
-};
+}

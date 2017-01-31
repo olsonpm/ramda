@@ -1,5 +1,5 @@
-var _curry1 = require('./internal/_curry1');
-var _has = require('./internal/_has');
+import _curry1 from './internal/_curry1';
+import _has from './internal/_has';
 
 
 /**
@@ -20,7 +20,7 @@ var _has = require('./internal/_has');
  *
  *      R.toPairs({a: 1, b: 2, c: 3}); //=> [['a', 1], ['b', 2], ['c', 3]]
  */
-module.exports = _curry1(function toPairs(obj) {
+export default _curry1(function toPairs(obj) {
   var pairs = [];
   for (var prop in obj) {
     if (_has(prop, obj)) {

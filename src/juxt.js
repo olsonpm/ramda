@@ -1,5 +1,5 @@
-var _curry1 = require('./internal/_curry1');
-var converge = require('./converge');
+import _curry1 from './internal/_curry1';
+import converge from './converge';
 
 
 /**
@@ -19,6 +19,6 @@ var converge = require('./converge');
  *      getRange(3, 4, 9, -3); //=> [-3, 9]
  * @symb R.juxt([f, g, h])(a, b) = [f(a, b), g(a, b), h(a, b)]
  */
-module.exports = _curry1(function juxt(fns) {
+export default _curry1(function juxt(fns) {
   return converge(function() { return Array.prototype.slice.call(arguments, 0); }, fns);
 });

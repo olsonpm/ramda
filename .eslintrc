@@ -7,6 +7,10 @@
   "globals": {
     "Symbol": true
   },
+  "parserOptions": {
+    "ecmaVersion": 6
+    , "sourceType": "module"
+  },
   "rules": {
     "no-eval": 2,
     "eqeqeq": 0,

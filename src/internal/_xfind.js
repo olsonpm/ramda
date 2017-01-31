@@ -1,9 +1,9 @@
-var _curry2 = require('./_curry2');
-var _reduced = require('./_reduced');
-var _xfBase = require('./_xfBase');
+import _curry2 from './_curry2';
+import _reduced from './_reduced';
+import _xfBase from './_xfBase';
 
 
-module.exports = (function() {
+export default (function() {
   function XFind(f, xf) {
     this.xf = xf;
     this.f = f;

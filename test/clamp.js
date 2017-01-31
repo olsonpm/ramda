@@ -1,5 +1,5 @@
-var eq = require('./shared/eq');
-var R = require('..');
+import eq from './shared/eq';
+import R from '..';
 
 describe('clamp', function() {
   it('clamps to the lower bound', function() {

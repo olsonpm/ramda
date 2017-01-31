@@ -1,7 +1,7 @@
-var R = require('..');
-var eq = require('./shared/eq');
-var fs = require('fs');
-var path = require('path');
+import R from '..';
+import eq from './shared/eq';
+import fs from 'fs';
+import path from 'path';
 
 
 function sourceMethods(dir) {

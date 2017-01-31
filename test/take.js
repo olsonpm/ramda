@@ -1,8 +1,8 @@
-var assert = require('assert');
-var sinon = require('sinon');
+import assert from 'assert';
+import sinon from 'sinon';
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 
 describe('take', function() {

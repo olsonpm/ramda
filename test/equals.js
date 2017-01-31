@@ -1,8 +1,8 @@
 /* global Map, Set, WeakMap, WeakSet */
 /* jshint typed: true */
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 describe('equals', function() {
   var a = [];

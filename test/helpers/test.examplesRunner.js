@@ -1,7 +1,7 @@
-var assert = require('assert');
-var fs = require('fs');
-var R = require('..');
-var dox = require('dox');
+import assert from 'assert';
+import fs from 'fs';
+import R from '..';
+import dox from 'dox';
 
 // simple object to hold info about our examples
 function ExampleTest(dox_info, original_source, alias_of) {

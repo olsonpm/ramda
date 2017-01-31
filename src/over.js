@@ -1,4 +1,4 @@
-var _curry3 = require('./internal/_curry3');
+import _curry3 from './internal/_curry3';
 
 
 /**
@@ -23,7 +23,7 @@ var _curry3 = require('./internal/_curry3');
  *
  *      R.over(headLens, R.toUpper, ['foo', 'bar', 'baz']); //=> ['FOO', 'bar', 'baz']
  */
-module.exports = (function() {
+export default (function() {
   // `Identity` is a functor that holds a single value, where `map` simply
   // transforms the held value with the provided function.
   var Identity = function(x) {

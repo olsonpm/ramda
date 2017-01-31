@@ -1,5 +1,5 @@
-var _curry1 = require('./internal/_curry1');
-var _identity = require('./internal/_identity');
+import _curry1 from './internal/_curry1';
+import _identity from './internal/_identity';
 
 
 /**
@@ -21,4 +21,4 @@ var _identity = require('./internal/_identity');
  *      R.identity(obj) === obj; //=> true
  * @symb R.identity(a) = a
  */
-module.exports = _curry1(_identity);
+export default _curry1(_identity);

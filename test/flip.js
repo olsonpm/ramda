@@ -1,8 +1,8 @@
-var jsv = require('jsverify');
+import jsv from 'jsverify';
 
-var R = require('..');
-var eq = require('./shared/eq');
-var funcN = require('./shared/funcN');
+import R from '..';
+import eq from './shared/eq';
+import funcN from './shared/funcN';
 
 
 describe('flip', function() {

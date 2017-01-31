@@ -1,4 +1,4 @@
-module.exports = (function() {
+export default (function() {
   function XWrap(fn) {
     this.f = fn;
   }

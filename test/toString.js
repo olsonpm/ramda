@@ -1,6 +1,6 @@
-var assert = require('assert');
+import assert from 'assert';
 
-var R = require('..');
+import R from '..';
 
 
 describe('toString', function() {
@@ -89,7 +89,7 @@ describe('toString', function() {
   });
 
   it('returns the string representation of a function', function() {
-    assert.strictEqual(R.toString(function add(a, b) { return a + b; }), 'function add(a, b) { return a + b; }');
+    assert.strictEqual(R.toString(function somethingUnique(a, b) { return a + b; }), 'function somethingUnique(a, b) { return a + b; }');
   });
 
   it('returns the string representation of an array', function() {

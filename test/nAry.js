@@ -1,7 +1,7 @@
-var assert = require('assert');
+import assert from 'assert';
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 
 describe('nAry', function() {

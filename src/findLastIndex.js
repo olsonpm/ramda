@@ -1,6 +1,6 @@
-var _curry2 = require('./internal/_curry2');
-var _dispatchable = require('./internal/_dispatchable');
-var _xfindLastIndex = require('./internal/_xfindLastIndex');
+import _curry2 from './internal/_curry2';
+import _dispatchable from './internal/_dispatchable';
+import _xfindLastIndex from './internal/_xfindLastIndex';
 
 
 /**
@@ -25,7 +25,7 @@ var _xfindLastIndex = require('./internal/_xfindLastIndex');
  *      R.findLastIndex(R.propEq('a', 1))(xs); //=> 1
  *      R.findLastIndex(R.propEq('a', 4))(xs); //=> -1
  */
-module.exports = _curry2(_dispatchable([], _xfindLastIndex, function findLastIndex(fn, list) {
+export default _curry2(_dispatchable([], _xfindLastIndex, function findLastIndex(fn, list) {
   var idx = list.length - 1;
   while (idx >= 0) {
     if (fn(list[idx])) {

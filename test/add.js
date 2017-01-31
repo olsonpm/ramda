@@ -1,6 +1,6 @@
-var R = require('..');
-var eq = require('./shared/eq');
-var jsv = require('jsverify');
+import R from '..';
+import eq from './shared/eq';
+import jsv from 'jsverify';
 
 
 describe('add', function() {

@@ -1,8 +1,8 @@
-var assert = require('assert');
+import assert from 'assert';
 
-var R = require('..');
-var eq = require('./shared/eq');
-var assocPath = require('../src/assocPath');
+import R from '..';
+import eq from './shared/eq';
+import assocPath from '../src/assocPath';
 
 
 describe('assocPath', function() {

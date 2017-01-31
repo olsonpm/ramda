@@ -1,6 +1,5 @@
-var _cloneRegExp = require('./_cloneRegExp');
-var type = require('../type');
-
+import _cloneRegExp from './_cloneRegExp';
+import type from '../type';
 
 /**
  * Copies an object.
@@ -12,7 +11,7 @@ var type = require('../type');
  * @param {Boolean} deep Whether or not to perform deep cloning.
  * @return {*} The copied value.
  */
-module.exports = function _clone(value, refFrom, refTo, deep) {
+export default function _clone(value, refFrom, refTo, deep) {
   var copy = function copy(copiedValue) {
     var len = refFrom.length;
     var idx = 0;
@@ -37,4 +36,4 @@ module.exports = function _clone(value, refFrom, refTo, deep) {
     case 'RegExp':  return _cloneRegExp(value);
     default:        return value;
   }
-};
+}

@@ -1,5 +1,5 @@
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 describe('adjust', function() {
   it('applies the given function to the value at the given index of the supplied array', function() {

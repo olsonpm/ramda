@@ -1,8 +1,8 @@
-var assert = require('assert');
-var jsv = require('jsverify');
+import assert from 'assert';
+import jsv from 'jsverify';
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 
 describe('compose', function() {

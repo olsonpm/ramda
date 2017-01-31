@@ -1,9 +1,9 @@
-var _concat = require('./_concat');
-var _curry2 = require('./_curry2');
-var _xfBase = require('./_xfBase');
+import _concat from './_concat';
+import _curry2 from './_curry2';
+import _xfBase from './_xfBase';
 
 
-module.exports = (function() {
+export default (function() {
   function XAperture(n, xf) {
     this.xf = xf;
     this.pos = 0;

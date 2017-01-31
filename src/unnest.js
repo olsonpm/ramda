@@ -1,5 +1,5 @@
-var _identity = require('./internal/_identity');
-var chain = require('./chain');
+import _identity from './internal/_identity';
+import chain from './chain';
 
 
 /**
@@ -19,4 +19,4 @@ var chain = require('./chain');
  *      R.unnest([1, [2], [[3]]]); //=> [1, 2, [3]]
  *      R.unnest([[1, 2], [3, 4], [5, 6]]); //=> [1, 2, 3, 4, 5, 6]
  */
-module.exports = chain(_identity);
+export default chain(_identity);

@@ -1,5 +1,5 @@
-var _contains = require('./internal/_contains');
-var _curry2 = require('./internal/_curry2');
+import _contains from './internal/_contains';
+import _curry2 from './internal/_curry2';
 
 
 /**
@@ -18,7 +18,7 @@ var _curry2 = require('./internal/_curry2');
  *
  *      R.omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, c: 3}
  */
-module.exports = _curry2(function omit(names, obj) {
+export default _curry2(function omit(names, obj) {
   var result = {};
   for (var prop in obj) {
     if (!_contains(prop, names)) {

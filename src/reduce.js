@@ -1,5 +1,5 @@
-var _curry3 = require('./internal/_curry3');
-var _reduce = require('./internal/_reduce');
+import _curry3 from './internal/_curry3';
+import _reduce from './internal/_reduce';
 
 
 /**
@@ -45,4 +45,4 @@ var _reduce = require('./internal/_reduce');
  *
  * @symb R.reduce(f, a, [b, c, d]) = f(f(f(a, b), c), d)
  */
-module.exports = _curry3(_reduce);
+export default _curry3(_reduce);

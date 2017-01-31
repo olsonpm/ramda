@@ -1,7 +1,7 @@
-var _curry2 = require('./internal/_curry2');
-var _dispatchable = require('./internal/_dispatchable');
-var _dropLastWhile = require('./internal/_dropLastWhile');
-var _xdropLastWhile = require('./internal/_xdropLastWhile');
+import _curry2 from './internal/_curry2';
+import _dispatchable from './internal/_dispatchable';
+import _dropLastWhile from './internal/_dropLastWhile';
+import _xdropLastWhile from './internal/_xdropLastWhile';
 
 
 /**
@@ -26,4 +26,4 @@ var _xdropLastWhile = require('./internal/_xdropLastWhile');
  *
  *      R.dropLastWhile(lteThree, [1, 2, 3, 4, 3, 2, 1]); //=> [1, 2, 3, 4]
  */
-module.exports = _curry2(_dispatchable([], _xdropLastWhile, _dropLastWhile));
+export default _curry2(_dispatchable([], _xdropLastWhile, _dropLastWhile));

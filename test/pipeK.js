@@ -1,8 +1,8 @@
-var jsv = require('jsverify');
-var assert = require('assert');
+import jsv from 'jsverify';
+import assert from 'assert';
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 
 var Identity = function(x) {

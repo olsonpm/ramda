@@ -1,5 +1,5 @@
-var _curry1 = require('./internal/_curry1');
-var sum = require('./sum');
+import _curry1 from './internal/_curry1';
+import sum from './sum';
 
 
 /**
@@ -17,6 +17,6 @@ var sum = require('./sum');
  *      R.mean([2, 7, 9]); //=> 6
  *      R.mean([]); //=> NaN
  */
-module.exports = _curry1(function mean(list) {
+export default _curry1(function mean(list) {
   return sum(list) / list.length;
 });

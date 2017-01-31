@@ -1,8 +1,8 @@
-var _curry2 = require('./_curry2');
-var _xfBase = require('./_xfBase');
+import _curry2 from './_curry2';
+import _xfBase from './_xfBase';
 
 
-module.exports = (function() {
+export default (function() {
   function XMap(f, xf) {
     this.xf = xf;
     this.f = f;

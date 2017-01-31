@@ -1,9 +1,9 @@
-var _xwrap = require('./_xwrap');
-var bind = require('../bind');
-var isArrayLike = require('../isArrayLike');
+import _xwrap from './_xwrap';
+import bind from '../bind';
+import isArrayLike from '../isArrayLike';
 
 
-module.exports = (function() {
+export default (function() {
   function _arrayReduce(xf, acc, list) {
     var idx = 0;
     var len = list.length;

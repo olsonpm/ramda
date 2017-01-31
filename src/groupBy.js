@@ -1,6 +1,6 @@
-var _checkForMethod = require('./internal/_checkForMethod');
-var _curry2 = require('./internal/_curry2');
-var reduceBy = require('./reduceBy');
+import _checkForMethod from './internal/_checkForMethod';
+import _curry2 from './internal/_curry2';
+import reduceBy from './reduceBy';
 
 /**
  * Splits a list into sub-lists stored in an object, based on the result of
@@ -42,7 +42,7 @@ var reduceBy = require('./reduceBy');
  *      //   'F': [{name: 'Eddy', score: 58}]
  *      // }
  */
-module.exports = _curry2(_checkForMethod('groupBy', reduceBy(function(acc, item) {
+export default _curry2(_checkForMethod('groupBy', reduceBy(function(acc, item) {
   if (acc == null) {
     acc = [];
   }

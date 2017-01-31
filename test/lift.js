@@ -1,8 +1,8 @@
 /* jshint -W053 */
 
-var R = require('..');
-var eq = require('./shared/eq');
-var Maybe = require('./shared/Maybe');
+import R from '..';
+import eq from './shared/eq';
+import Maybe from './shared/Maybe';
 
 
 var add3 = R.curry(function add3(a, b, c) {

@@ -1,9 +1,9 @@
-var _forceReduced = require('./_forceReduced');
-var _reduce = require('./_reduce');
-var _xfBase = require('./_xfBase');
-var isArrayLike = require('../isArrayLike');
+import _forceReduced from './_forceReduced';
+import _reduce from './_reduce';
+import _xfBase from './_xfBase';
+import isArrayLike from '../isArrayLike';
 
-module.exports = (function() {
+export default (function() {
   var preservingReduced = function(xf) {
     return {
       '@@transducer/init': _xfBase.init,

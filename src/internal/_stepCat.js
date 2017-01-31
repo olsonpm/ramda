@@ -1,11 +1,11 @@
-var _assign = require('./_assign');
-var _identity = require('./_identity');
-var _isTransformer = require('./_isTransformer');
-var isArrayLike = require('../isArrayLike');
-var objOf = require('../objOf');
+import _assign from './_assign';
+import _identity from './_identity';
+import _isTransformer from './_isTransformer';
+import isArrayLike from '../isArrayLike';
+import objOf from '../objOf';
 
 
-module.exports = (function() {
+export default (function() {
   var _stepCatArray = {
     '@@transducer/init': Array,
     '@@transducer/step': function(xs, x) {

@@ -1,7 +1,7 @@
-var _arity = require('./internal/_arity');
-var _curry1 = require('./internal/_curry1');
-var _has = require('./internal/_has');
-var toString = require('./toString');
+import _arity from './internal/_arity';
+import _curry1 from './internal/_curry1';
+import _has from './internal/_has';
+import toString from './toString';
 
 
 /**
@@ -30,7 +30,7 @@ var toString = require('./toString');
  *      factorial(5); //=> 120
  *      count; //=> 1
  */
-module.exports = _curry1(function memoize(fn) {
+export default _curry1(function memoize(fn) {
   var cache = {};
   return _arity(fn.length, function() {
     var key = toString(arguments);

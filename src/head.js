@@ -1,4 +1,4 @@
-var nth = require('./nth');
+import nth from './nth';
 
 
 /**
@@ -22,4 +22,4 @@ var nth = require('./nth');
  *      R.head('abc'); //=> 'a'
  *      R.head(''); //=> ''
  */
-module.exports = nth(0);
+export default nth(0);

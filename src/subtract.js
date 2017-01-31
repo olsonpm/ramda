@@ -1,4 +1,4 @@
-var _curry2 = require('./internal/_curry2');
+import _curry2 from './internal/_curry2';
 
 
 /**
@@ -24,6 +24,6 @@ var _curry2 = require('./internal/_curry2');
  *      complementaryAngle(30); //=> 60
  *      complementaryAngle(72); //=> 18
  */
-module.exports = _curry2(function subtract(a, b) {
+export default _curry2(function subtract(a, b) {
   return Number(a) - Number(b);
 });

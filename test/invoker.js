@@ -1,8 +1,8 @@
-var assert = require('assert');
-var vm = require('vm');
+import assert from 'assert';
+import vm from 'vm';
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 
 describe('invoker', function() {

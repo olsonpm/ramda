@@ -1,9 +1,9 @@
-var assert = require('assert');
+import assert from 'assert';
 
-var R = require('../..');
+import R from '../..';
 
 
-module.exports = function(actual, expected) {
+export default function(actual, expected) {
   assert.strictEqual(arguments.length, 2);
   assert.strictEqual(R.toString(actual), R.toString(expected));
-};
+}

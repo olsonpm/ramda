@@ -1,6 +1,6 @@
-var _curry2 = require('./internal/_curry2');
-var _dispatchable = require('./internal/_dispatchable');
-var _xdropWhile = require('./internal/_xdropWhile');
+import _curry2 from './internal/_curry2';
+import _dispatchable from './internal/_dispatchable';
+import _xdropWhile from './internal/_xdropWhile';
 
 
 /**
@@ -28,7 +28,7 @@ var _xdropWhile = require('./internal/_xdropWhile');
  *
  *      R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1]); //=> [3, 4, 3, 2, 1]
  */
-module.exports = _curry2(_dispatchable(['dropWhile'], _xdropWhile, function dropWhile(pred, list) {
+export default _curry2(_dispatchable(['dropWhile'], _xdropWhile, function dropWhile(pred, list) {
   var idx = 0;
   var len = list.length;
   while (idx < len && pred(list[idx])) {

@@ -1,9 +1,9 @@
-var _curryN = require('./_curryN');
-var _has = require('./_has');
-var _xfBase = require('./_xfBase');
+import _curryN from './_curryN';
+import _has from './_has';
+import _xfBase from './_xfBase';
 
 
-module.exports = (function() {
+export default (function() {
   function XReduceBy(valueFn, valueAcc, keyFn, xf) {
     this.valueFn = valueFn;
     this.valueAcc = valueAcc;

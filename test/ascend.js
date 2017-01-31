@@ -1,5 +1,5 @@
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 describe('ascend', function() {
   it('builds an ascending comparator function out of the identity function', function() {

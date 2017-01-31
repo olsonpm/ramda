@@ -1,4 +1,4 @@
-var _curry2 = require('./internal/_curry2');
+import _curry2 from './internal/_curry2';
 
 
 /**
@@ -23,7 +23,7 @@ var _curry2 = require('./internal/_curry2');
  *
  *      R.takeLastWhile(isNotOne, [1, 2, 3, 4]); //=> [2, 3, 4]
  */
-module.exports = _curry2(function takeLastWhile(fn, list) {
+export default _curry2(function takeLastWhile(fn, list) {
   var idx = list.length - 1;
   while (idx >= 0 && fn(list[idx])) {
     idx -= 1;

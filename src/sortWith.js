@@ -1,4 +1,4 @@
-var _curry2 = require('./internal/_curry2');
+import _curry2 from './internal/_curry2';
 
 
 /**
@@ -33,7 +33,7 @@ var _curry2 = require('./internal/_curry2');
  *      ]);
  *      ageNameSort(people); //=> [alice, clara, bob]
  */
-module.exports = _curry2(function sortWith(fns, list) {
+export default _curry2(function sortWith(fns, list) {
   return Array.prototype.slice.call(list, 0).sort(function(a, b) {
     var result = 0;
     var i = 0;

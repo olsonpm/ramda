@@ -1,7 +1,7 @@
-var R = require('..');
-var eq = require('./shared/eq');
-var jsv = require('jsverify');
-var funcN = require('./shared/funcN');
+import R from '..';
+import eq from './shared/eq';
+import jsv from 'jsverify';
+import funcN from './shared/funcN';
 
 describe('curry', function() {
   it('curries a single value', function() {

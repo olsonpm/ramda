@@ -1,12 +1,12 @@
-var _arrayFromIterator = require('./_arrayFromIterator');
-var _functionName = require('./_functionName');
-var _has = require('./_has');
-var identical = require('../identical');
-var keys = require('../keys');
-var type = require('../type');
+import _arrayFromIterator from './_arrayFromIterator';
+import _functionName from './_functionName';
+import _has from './_has';
+import identical from '../identical';
+import keys from '../keys';
+import type from '../type';
 
 
-module.exports = function _equals(a, b, stackA, stackB) {
+export default function _equals(a, b, stackA, stackB) {
   if (identical(a, b)) {
     return true;
   }
@@ -106,4 +106,4 @@ module.exports = function _equals(a, b, stackA, stackB) {
   stackA.pop();
   stackB.pop();
   return true;
-};
+}

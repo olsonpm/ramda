@@ -1,5 +1,5 @@
-var _curry2 = require('./internal/_curry2');
-var _has = require('./internal/_has');
+import _curry2 from './internal/_curry2';
+import _has from './internal/_has';
 
 
 /**
@@ -36,7 +36,7 @@ var _has = require('./internal/_has');
  *      pred({a: 'foo', b: 'xxx', x: 10, y: 19}); //=> false
  *      pred({a: 'foo', b: 'xxx', x: 11, y: 20}); //=> false
  */
-module.exports = _curry2(function where(spec, testObj) {
+export default _curry2(function where(spec, testObj) {
   for (var prop in spec) {
     if (_has(prop, spec) && !spec[prop](testObj[prop])) {
       return false;

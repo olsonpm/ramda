@@ -1,4 +1,4 @@
-var _curry1 = require('./internal/_curry1');
+import _curry1 from './internal/_curry1';
 
 
 /**
@@ -21,7 +21,7 @@ var _curry1 = require('./internal/_curry1');
  *      var f = new F();
  *      R.valuesIn(f); //=> ['X', 'Y']
  */
-module.exports = _curry1(function valuesIn(obj) {
+export default _curry1(function valuesIn(obj) {
   var prop;
   var vs = [];
   for (prop in obj) {

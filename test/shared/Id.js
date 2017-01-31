@@ -1,4 +1,4 @@
-var R = require('../..');
+import R from '../..';
 
 
 function Id(x) {
@@ -25,4 +25,4 @@ Id.prototype.toString = function() {
   return 'Id(' + R.toString(this.value) + ')';
 };
 
-module.exports = Id;
+export default Id;

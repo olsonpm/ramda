@@ -1,8 +1,8 @@
-var _curry2 = require('./_curry2');
-var _reduce = require('./_reduce');
-var _xfBase = require('./_xfBase');
+import _curry2 from './_curry2';
+import _reduce from './_reduce';
+import _xfBase from './_xfBase';
 
-module.exports = (function() {
+export default (function() {
   function XDropLastWhile(fn, xf) {
     this.f = fn;
     this.retained = [];

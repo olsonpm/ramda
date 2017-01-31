@@ -1,7 +1,7 @@
-var _concat = require('./internal/_concat');
-var _curry2 = require('./internal/_curry2');
-var _reduce = require('./internal/_reduce');
-var map = require('./map');
+import _concat from './internal/_concat';
+import _curry2 from './internal/_curry2';
+import _reduce from './internal/_reduce';
+import map from './map';
 
 
 /**
@@ -25,7 +25,7 @@ var map = require('./map');
  *      R.ap([R.concat('tasty '), R.toUpper], ['pizza', 'salad']); //=> ["tasty pizza", "tasty salad", "PIZZA", "SALAD"]
  * @symb R.ap([f, g], [a, b]) = [f(a), f(b), g(a), g(b)]
  */
-module.exports = _curry2(function ap(applicative, fn) {
+export default _curry2(function ap(applicative, fn) {
   return (
     typeof applicative.ap === 'function' ?
       applicative.ap(fn) :

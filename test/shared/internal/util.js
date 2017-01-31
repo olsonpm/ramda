@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 
   baseMap: function(f) {
     return f(this.value);

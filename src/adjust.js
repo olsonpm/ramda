@@ -1,5 +1,5 @@
-var _concat = require('./internal/_concat');
-var _curry3 = require('./internal/_curry3');
+import _concat from './internal/_concat';
+import _curry3 from './internal/_curry3';
 
 
 /**
@@ -27,7 +27,7 @@ var _curry3 = require('./internal/_curry3');
  * @symb R.adjust(f, -1, [a, b]) = [a, f(b)]
  * @symb R.adjust(f, 0, [a, b]) = [f(a), b]
  */
-module.exports = _curry3(function adjust(fn, idx, list) {
+export default _curry3(function adjust(fn, idx, list) {
   if (idx >= list.length || idx < -list.length) {
     return list;
   }

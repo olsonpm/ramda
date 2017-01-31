@@ -1,4 +1,4 @@
-var util = require('./internal/util.js');
+import util from './internal/util.js';
 
 function Maybe(x) {
   return x == null ? _nothing : Maybe.Just(x);
@@ -84,4 +84,4 @@ _Nothing.prototype.equals = function(that) {
 };
 
 
-module.exports = Maybe;
+export default Maybe;

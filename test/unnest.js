@@ -1,8 +1,8 @@
-var assert = require('assert');
+import assert from 'assert';
 
-var R = require('..');
-var eq = require('./shared/eq');
-var Maybe = require('./shared/Maybe');
+import R from '..';
+import eq from './shared/eq';
+import Maybe from './shared/Maybe';
 
 
 describe('unnest', function() {

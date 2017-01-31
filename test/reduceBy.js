@@ -1,5 +1,5 @@
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 var byType = R.prop('type');
 var sumValues = function(acc, obj) {return acc + obj.val;};

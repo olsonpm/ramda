@@ -1,5 +1,5 @@
-var _curry2 = require('./internal/_curry2');
-var curryN = require('./curryN');
+import _curry2 from './internal/_curry2';
+import curryN from './curryN';
 
 
 /**
@@ -31,7 +31,7 @@ var curryN = require('./curryN');
  *      R.useWith(Math.pow, [R.dec, R.inc])(3)(4); //=> 32
  * @symb R.useWith(f, [g, h])(a, b) = f(g(a), h(b))
  */
-module.exports = _curry2(function useWith(fn, transformers) {
+export default _curry2(function useWith(fn, transformers) {
   return curryN(transformers.length, function() {
     var args = [];
     var idx = 0;

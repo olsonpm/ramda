@@ -1,7 +1,7 @@
 /**
  * Polyfill from <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString>.
  */
-module.exports = (function() {
+export default (function() {
   var pad = function pad(n) { return (n < 10 ? '0' : '') + n; };
 
   return typeof Date.prototype.toISOString === 'function' ?

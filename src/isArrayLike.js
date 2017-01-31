@@ -1,6 +1,6 @@
-var _curry1 = require('./internal/_curry1');
-var _isArray = require('./internal/_isArray');
-var _isString = require('./internal/_isString');
+import _curry1 from './internal/_curry1';
+import _isArray from './internal/_isArray';
+import _isString from './internal/_isString';
 
 
 /**
@@ -23,7 +23,7 @@ var _isString = require('./internal/_isString');
  *      R.isArrayLike({length: 10}); //=> false
  *      R.isArrayLike({0: 'zero', 9: 'nine', length: 10}); //=> true
  */
-module.exports = _curry1(function isArrayLike(x) {
+export default _curry1(function isArrayLike(x) {
   if (_isArray(x)) { return true; }
   if (!x) { return false; }
   if (typeof x !== 'object') { return false; }

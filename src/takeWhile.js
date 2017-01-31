@@ -1,6 +1,6 @@
-var _curry2 = require('./internal/_curry2');
-var _dispatchable = require('./internal/_dispatchable');
-var _xtakeWhile = require('./internal/_xtakeWhile');
+import _curry2 from './internal/_curry2';
+import _dispatchable from './internal/_dispatchable';
+import _xtakeWhile from './internal/_xtakeWhile';
 
 
 /**
@@ -29,7 +29,7 @@ var _xtakeWhile = require('./internal/_xtakeWhile');
  *
  *      R.takeWhile(isNotFour, [1, 2, 3, 4, 3, 2, 1]); //=> [1, 2, 3]
  */
-module.exports = _curry2(_dispatchable(['takeWhile'], _xtakeWhile, function takeWhile(fn, list) {
+export default _curry2(_dispatchable(['takeWhile'], _xtakeWhile, function takeWhile(fn, list) {
   var idx = 0;
   var len = list.length;
   while (idx < len && fn(list[idx])) {

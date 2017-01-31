@@ -1,7 +1,7 @@
-var S = require('sanctuary');
+import S from 'sanctuary';
 
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 
 describe('both', function() {

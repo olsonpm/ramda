@@ -1,4 +1,4 @@
-var invoker = require('./invoker');
+import invoker from './invoker';
 
 
 /**
@@ -16,4 +16,4 @@ var invoker = require('./invoker');
  *
  *      R.toLower('XYZ'); //=> 'xyz'
  */
-module.exports = invoker(0, 'toLowerCase');
+export default invoker(0, 'toLowerCase');

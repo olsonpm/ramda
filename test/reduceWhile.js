@@ -1,5 +1,5 @@
-var R = require('..');
-var eq = require('./shared/eq');
+import R from '..';
+import eq from './shared/eq';
 
 var isOdd = function(_, x) {return x % 2 === 1; };
 
