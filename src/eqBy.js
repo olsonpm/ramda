@@ -19,6 +19,6 @@ import equals from './equals';
  *
  *      R.eqBy(Math.abs, 5, -5); //=> true
  */
-export default _curry3(function eqBy(f, x, y) {
+export default /* #__PURE__ */_curry3(function eqBy(f, x, y) {
   return equals(f(x), f(y));
 });

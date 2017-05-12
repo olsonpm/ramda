@@ -26,6 +26,6 @@ import _curry3 from './internal/_curry3';
  *      coerceArray([1, 2, 3]); //=> [1, 2, 3]
  *      coerceArray(1);         //=> [1]
  */
-export default _curry3(function unless(pred, whenFalseFn, x) {
+export default /* #__PURE__ */_curry3(function unless(pred, whenFalseFn, x) {
   return pred(x) ? x : whenFalseFn(x);
 });

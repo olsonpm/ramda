@@ -18,4 +18,4 @@ import _curry1 from './internal/_curry1';
  *      R.isNil(0); //=> false
  *      R.isNil([]); //=> false
  */
-export default _curry1(function isNil(x) { return x == null; });
+export default /* #__PURE__ */_curry1(function isNil(x) { return x == null; });

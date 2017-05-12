@@ -46,7 +46,7 @@ import _curryN from './internal/_curryN';
  *      var g = f(3);
  *      g(4); //=> 10
  */
-export default _curry2(function curryN(length, fn) {
+export default /* #__PURE__ */_curry2(function curryN(length, fn) {
   if (length === 1) {
     return _curry1(fn);
   }

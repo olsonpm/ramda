@@ -16,4 +16,4 @@ import always from './always';
  *
  *      R.F(); //=> false
  */
-export default always(false);
+export default /* #__PURE__ */always(false);

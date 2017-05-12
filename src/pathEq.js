@@ -27,6 +27,6 @@ import path from './path';
  *      var isFamous = R.pathEq(['address', 'zipCode'], 90210);
  *      R.filter(isFamous, users); //=> [ user1 ]
  */
-export default _curry3(function pathEq(_path, val, obj) {
+export default /* #__PURE__ */_curry3(function pathEq(_path, val, obj) {
   return equals(path(_path, obj), val);
 });

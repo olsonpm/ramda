@@ -30,7 +30,7 @@ import toString from './toString';
  *      factorial(5); //=> 120
  *      count; //=> 1
  */
-export default _curry1(function memoize(fn) {
+export default /* #__PURE__ */_curry1(function memoize(fn) {
   var cache = {};
   return _arity(fn.length, function() {
     var key = toString(arguments);

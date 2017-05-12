@@ -31,7 +31,7 @@ import reduce from './reduce';
  *      fn(50); //=> 'nothing special happens at 50°C'
  *      fn(100); //=> 'water boils at 100°C'
  */
-export default _curry1(function cond(pairs) {
+export default /* #__PURE__ */_curry1(function cond(pairs) {
   var arity = reduce(max,
                      0,
                      map(function(pair) { return pair[0].length; }, pairs));

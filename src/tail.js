@@ -30,4 +30,4 @@ import slice from './slice';
  *      R.tail('a');    //=> ''
  *      R.tail('');     //=> ''
  */
-export default _curry1(_checkForMethod('tail', slice(1, Infinity)));
+export default /* #__PURE__ */_curry1(/* #__PURE__ */_checkForMethod('tail', /* #__PURE__ */slice(1, Infinity)));

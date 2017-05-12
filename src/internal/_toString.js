@@ -9,7 +9,7 @@ import reject from '../reject';
 export default function _toString(x, seen) {
   var recur = function recur(y) {
     var xs = seen.concat([x]);
-    return _contains(y, xs) ? '<Circular>' : _toString(y, xs);
+    return _contains(y, xs) ? '<Circular>' : /* #__PURE__ */_toString(y, xs);
   };
 
   //  mapPairs :: (Object, [String]) -> [String]

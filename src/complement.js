@@ -24,4 +24,4 @@ import not from './not';
  *      isNil(7); //=> false
  *      isNotNil(7); //=> true
  */
-export default lift(not);
+export default /* #__PURE__ */lift(not);

@@ -16,4 +16,4 @@ import add from './add';
  *
  *      R.dec(42); //=> 41
  */
-export default add(-1);
+export default /* #__PURE__ */add(-1);

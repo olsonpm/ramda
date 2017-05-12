@@ -26,4 +26,4 @@ import _xdropLastWhile from './internal/_xdropLastWhile';
  *
  *      R.dropLastWhile(lteThree, [1, 2, 3, 4, 3, 2, 1]); //=> [1, 2, 3, 4]
  */
-export default _curry2(_dispatchable([], _xdropLastWhile, _dropLastWhile));
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable([], _xdropLastWhile, _dropLastWhile));

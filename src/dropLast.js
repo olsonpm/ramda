@@ -25,4 +25,4 @@ import _xdropLast from './internal/_xdropLast';
  *      R.dropLast(4, ['foo', 'bar', 'baz']); //=> []
  *      R.dropLast(3, 'ramda');               //=> 'ra'
  */
-export default _curry2(_dispatchable([], _xdropLast, _dropLast));
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable([], _xdropLast, _dropLast));

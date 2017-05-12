@@ -42,7 +42,7 @@ import reduceBy from './reduceBy';
  *      //   'F': [{name: 'Eddy', score: 58}]
  *      // }
  */
-export default _curry2(_checkForMethod('groupBy', reduceBy(function(acc, item) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_checkForMethod('groupBy', /* #__PURE__ */reduceBy(function(acc, item) {
   if (acc == null) {
     acc = [];
   }

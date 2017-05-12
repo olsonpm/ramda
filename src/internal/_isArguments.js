@@ -1,7 +1,7 @@
 import _has from './_has';
 
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   var toString = Object.prototype.toString;
   return toString.call(arguments) === '[object Arguments]' ?
     function _isArguments(x) { return toString.call(x) === '[object Arguments]'; } :

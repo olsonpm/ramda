@@ -15,4 +15,4 @@ import _curry1 from './internal/_curry1';
  *
  *      R.negate(42); //=> -42
  */
-export default _curry1(function negate(n) { return -n; });
+export default /* #__PURE__ */_curry1(function negate(n) { return -n; });

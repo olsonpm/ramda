@@ -32,7 +32,7 @@ import lift from './lift';
  *      f(15); //=> true
  *      f(30); //=> false
  */
-export default _curry2(function both(f, g) {
+export default /* #__PURE__ */_curry2(function both(f, g) {
   return _isFunction(f) ?
     function _both() {
       return f.apply(this, arguments) && g.apply(this, arguments);

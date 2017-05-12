@@ -22,4 +22,4 @@ import nth from './nth';
  *      R.head('abc'); //=> 'a'
  *      R.head(''); //=> ''
  */
-export default nth(0);
+export default /* #__PURE__ */nth(0);

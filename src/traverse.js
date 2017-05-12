@@ -29,6 +29,6 @@ import sequence from './sequence';
  *      R.traverse(Maybe.of, safeDiv(10), [2, 4, 5]); //=> Just([5, 2.5, 2])
  *      R.traverse(Maybe.of, safeDiv(10), [2, 0, 5]); //=> Nothing
  */
-export default _curry3(function traverse(of, f, traversable) {
+export default /* #__PURE__ */_curry3(function traverse(of, f, traversable) {
   return sequence(of, map(f, traversable));
 });

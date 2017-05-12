@@ -28,6 +28,6 @@ import _has from './internal/_has';
  *      favorite(alice);  //=> undefined
  *      favoriteWithDefault(alice);  //=> 'Ramda'
  */
-export default _curry3(function propOr(val, p, obj) {
+export default /* #__PURE__ */_curry3(function propOr(val, p, obj) {
   return (obj != null && _has(p, obj)) ? obj[p] : val;
 });

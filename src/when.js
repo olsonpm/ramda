@@ -29,6 +29,6 @@ import _curry3 from './internal/_curry3';
  *      truncate('12345');         //=> '12345'
  *      truncate('0123456789ABC'); //=> '0123456789…'
  */
-export default _curry3(function when(pred, whenTrueFn, x) {
+export default /* #__PURE__ */_curry3(function when(pred, whenTrueFn, x) {
   return pred(x) ? whenTrueFn(x) : x;
 });

@@ -28,6 +28,6 @@ import path from './path';
  *      R.over(xHeadYLens, R.negate, {x: [{y: 2, z: 3}, {y: 4, z: 5}]});
  *      //=> {x: [{y: -2, z: 3}, {y: 4, z: 5}]}
  */
-export default _curry1(function lensPath(p) {
+export default /* #__PURE__ */_curry1(function lensPath(p) {
   return lens(path(p), assocPath(p));
 });

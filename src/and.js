@@ -20,6 +20,6 @@ import _curry2 from './internal/_curry2';
  *      R.and(false, true); //=> false
  *      R.and(false, false); //=> false
  */
-export default _curry2(function and(a, b) {
+export default /* #__PURE__ */_curry2(function and(a, b) {
   return a && b;
 });

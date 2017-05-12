@@ -21,6 +21,6 @@ import slice from './slice';
  *      R.splitAt(5, 'hello world');      //=> ['hello', ' world']
  *      R.splitAt(-1, 'foobar');          //=> ['fooba', 'r']
  */
-export default _curry2(function splitAt(index, array) {
+export default /* #__PURE__ */_curry2(function splitAt(index, array) {
   return [slice(0, index, array), slice(index, length(array), array)];
 });

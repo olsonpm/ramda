@@ -2,7 +2,7 @@ import _curry2 from './_curry2';
 import _xfBase from './_xfBase';
 
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   function XDropLast(n, xf) {
     this.xf = xf;
     this.pos = 0;

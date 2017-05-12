@@ -24,7 +24,7 @@ import _curry3 from './internal/_curry3';
  *      var l2 = [{a: 3}, {a: 4}];
  *      R.differenceWith(cmp, l1, l2); //=> [{a: 1}, {a: 2}]
  */
-export default _curry3(function differenceWith(pred, first, second) {
+export default /* #__PURE__ */_curry3(function differenceWith(pred, first, second) {
   var out = [];
   var idx = 0;
   var firstLen = first.length;

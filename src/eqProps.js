@@ -23,6 +23,6 @@ import equals from './equals';
  *      R.eqProps('a', o1, o2); //=> false
  *      R.eqProps('c', o1, o2); //=> true
  */
-export default _curry3(function eqProps(prop, obj1, obj2) {
+export default /* #__PURE__ */_curry3(function eqProps(prop, obj1, obj2) {
   return equals(obj1[prop], obj2[prop]);
 });

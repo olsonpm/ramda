@@ -42,7 +42,7 @@ import keys from './keys';
  * @symb R.map(f, { x: a, y: b }) = { x: f(a), y: f(b) }
  * @symb R.map(f, functor_o) = functor_o.map(f)
  */
-export default _curry2(_dispatchable(['map'], _xmap, function map(fn, functor) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable(['map'], _xmap, function map(fn, functor) {
   switch (Object.prototype.toString.call(functor)) {
     case '[object Function]':
       return curryN(functor.length, function() {

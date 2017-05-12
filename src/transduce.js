@@ -47,6 +47,6 @@ import curryN from './curryN';
  *
  *      R.transduce(transducer, R.flip(R.append), [], numbers); //=> [2, 3]
  */
-export default curryN(4, function transduce(xf, fn, acc, list) {
+export default /* #__PURE__ */curryN(4, function transduce(xf, fn, acc, list) {
   return _reduce(xf(typeof fn === 'function' ? _xwrap(fn) : fn), acc, list);
 });

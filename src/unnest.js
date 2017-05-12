@@ -19,4 +19,4 @@ import chain from './chain';
  *      R.unnest([1, [2], [[3]]]); //=> [1, 2, [3]]
  *      R.unnest([[1, 2], [3, 4], [5, 6]]); //=> [1, 2, 3, 4, 5, 6]
  */
-export default chain(_identity);
+export default /* #__PURE__ */chain(_identity);

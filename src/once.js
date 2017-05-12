@@ -21,7 +21,7 @@ import _curry1 from './internal/_curry1';
  *      addOneOnce(10); //=> 11
  *      addOneOnce(addOneOnce(50)); //=> 11
  */
-export default _curry1(function once(fn) {
+export default /* #__PURE__ */_curry1(function once(fn) {
   var called = false;
   var result;
   return _arity(fn.length, function() {

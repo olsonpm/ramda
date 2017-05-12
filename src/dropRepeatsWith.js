@@ -25,7 +25,7 @@ import last from './last';
  *      var l = [1, -1, 1, 3, 4, -4, -4, -5, 5, 3, 3];
  *      R.dropRepeatsWith(R.eqBy(Math.abs), l); //=> [1, 3, 4, -5, 3]
  */
-export default _curry2(_dispatchable([], _xdropRepeatsWith, function dropRepeatsWith(pred, list) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable([], _xdropRepeatsWith, function dropRepeatsWith(pred, list) {
   var result = [];
   var idx = 1;
   var len = list.length;
@@ -40,4 +40,3 @@ export default _curry2(_dispatchable([], _xdropRepeatsWith, function dropRepeats
   }
   return result;
 }));
-

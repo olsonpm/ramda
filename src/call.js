@@ -32,6 +32,6 @@ import curry from './curry';
  *      format({indent: 2, value: 'foo\nbar\nbaz\n'}); //=> '  foo\n  bar\n  baz\n'
  * @symb R.call(f, a, b) = f(a, b)
  */
-export default curry(function call(fn) {
+export default /* #__PURE__ */curry(function call(fn) {
   return fn.apply(this, Array.prototype.slice.call(arguments, 1));
 });

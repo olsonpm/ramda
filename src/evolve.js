@@ -28,7 +28,7 @@ import _curry2 from './internal/_curry2';
  *      };
  *      R.evolve(transformations, tomato); //=> {firstName: 'Tomato', data: {elapsed: 101, remaining: 1399}, id:123}
  */
-export default _curry2(function evolve(transformations, object) {
+export default /* #__PURE__ */_curry2(function evolve(transformations, object) {
   var result = {};
   var transformation, key, type;
   for (key in object) {

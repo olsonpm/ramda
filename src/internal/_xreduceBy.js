@@ -3,7 +3,7 @@ import _has from './_has';
 import _xfBase from './_xfBase';
 
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   function XReduceBy(valueFn, valueAcc, keyFn, xf) {
     this.valueFn = valueFn;
     this.valueAcc = valueAcc;

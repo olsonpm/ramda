@@ -29,6 +29,6 @@ import nAry from './nAry';
  *      takesOneArg(1, 2); //=> [1, undefined]
  * @symb R.unary(f)(a, b, c) = f(a)
  */
-export default _curry1(function unary(fn) {
+export default /* #__PURE__ */_curry1(function unary(fn) {
   return nAry(1, fn);
 });

@@ -20,7 +20,7 @@ import _curry1 from './internal/_curry1';
  *      var t = R.always('Tee');
  *      t(); //=> 'Tee'
  */
-export default _curry1(function always(val) {
+export default /* #__PURE__ */_curry1(function always(val) {
   return function() {
     return val;
   };

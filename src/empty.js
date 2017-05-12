@@ -27,7 +27,7 @@ import _isString from './internal/_isString';
  *      R.empty('unicorns');    //=> ''
  *      R.empty({x: 1, y: 2});  //=> {}
  */
-export default _curry1(function empty(x) {
+export default /* #__PURE__ */_curry1(function empty(x) {
   return (
     (x != null && typeof x.empty === 'function') ?
       x.empty() :

@@ -29,7 +29,7 @@ import _has from './internal/_has';
  *      //=> { a: true, b: true, thing: 'bar', values: [10, 20, 15, 35] }
  * @symb R.mergeWithKey(f, { x: 1, y: 2 }, { y: 5, z: 3 }) = { x: 1, y: f('y', 2, 5), z: 3 }
  */
-export default _curry3(function mergeWithKey(fn, l, r) {
+export default /* #__PURE__ */_curry3(function mergeWithKey(fn, l, r) {
   var result = {};
   var k;
 

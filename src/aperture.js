@@ -25,4 +25,4 @@ import _xaperture from './internal/_xaperture';
  *      R.aperture(3, [1, 2, 3, 4, 5]); //=> [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
  *      R.aperture(7, [1, 2, 3, 4, 5]); //=> []
  */
-export default _curry2(_dispatchable([], _xaperture, _aperture));
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable([], _xaperture, _aperture));

@@ -31,7 +31,7 @@ import reduce from './reduce';
  *      isBlackCard({rank: 'Q', suit: '♠'}); //=> true
  *      isBlackCard({rank: 'Q', suit: '♦'}); //=> false
  */
-export default _curry1(function anyPass(preds) {
+export default /* #__PURE__ */_curry1(function anyPass(preds) {
   return curryN(reduce(max, 0, pluck('length', preds)), function() {
     var idx = 0;
     var len = preds.length;

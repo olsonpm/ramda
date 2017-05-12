@@ -28,6 +28,6 @@ import slice from './slice';
  *      R.drop(4, ['foo', 'bar', 'baz']); //=> []
  *      R.drop(3, 'ramda');               //=> 'da'
  */
-export default _curry2(_dispatchable(['drop'], _xdrop, function drop(n, xs) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable(['drop'], _xdrop, function drop(n, xs) {
   return slice(Math.max(0, n), Infinity, xs);
 }));

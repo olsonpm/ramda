@@ -47,6 +47,6 @@ import slice from './slice';
  * @symb R.take(1, [a, b]) = [a]
  * @symb R.take(2, [a, b]) = [a, b]
  */
-export default _curry2(_dispatchable(['take'], _xtake, function take(n, xs) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable(['take'], _xtake, function take(n, xs) {
   return slice(0, n < 0 ? Infinity : n, xs);
 }));

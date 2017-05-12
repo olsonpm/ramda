@@ -20,6 +20,6 @@ import _curry1 from './internal/_curry1';
  *      R.not(0); //=> true
  *      R.not(1); //=> false
  */
-export default _curry1(function not(a) {
+export default /* #__PURE__ */_curry1(function not(a) {
   return !a;
 });

@@ -24,7 +24,7 @@ import _curry1 from './internal/_curry1';
  *      R.type([]); //=> "Array"
  *      R.type(/[A-z]/); //=> "RegExp"
  */
-export default _curry1(function type(val) {
+export default /* #__PURE__ */_curry1(function type(val) {
   return val === null      ? 'Null'      :
          val === undefined ? 'Undefined' :
          Object.prototype.toString.call(val).slice(8, -1);

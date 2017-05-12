@@ -19,4 +19,4 @@ import uniqBy from './uniqBy';
  *      R.uniq([1, '1']);     //=> [1, '1']
  *      R.uniq([[42], [42]]); //=> [[42]]
  */
-export default uniqBy(identity);
+export default /* #__PURE__ */uniqBy(identity);

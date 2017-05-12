@@ -25,7 +25,7 @@ import map from './map';
  *      R.ap([R.concat('tasty '), R.toUpper], ['pizza', 'salad']); //=> ["tasty pizza", "tasty salad", "PIZZA", "SALAD"]
  * @symb R.ap([f, g], [a, b]) = [f(a), f(b), g(a), g(b)]
  */
-export default _curry2(function ap(applicative, fn) {
+export default /* #__PURE__ */_curry2(function ap(applicative, fn) {
   return (
     typeof applicative.ap === 'function' ?
       applicative.ap(fn) :

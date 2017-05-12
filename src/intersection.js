@@ -22,7 +22,7 @@ import uniq from './uniq';
  *
  *      R.intersection([1,2,3,4], [7,6,5,4,3]); //=> [4, 3]
  */
-export default _curry2(function intersection(list1, list2) {
+export default /* #__PURE__ */_curry2(function intersection(list1, list2) {
   var lookupList, filteredList;
   if (list1.length > list2.length) {
     lookupList = list1;

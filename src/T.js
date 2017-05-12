@@ -16,4 +16,4 @@ import always from './always';
  *
  *      R.T(); //=> true
  */
-export default always(true);
+export default /* #__PURE__ */always(true);

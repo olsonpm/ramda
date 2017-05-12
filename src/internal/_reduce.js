@@ -3,7 +3,7 @@ import bind from '../bind';
 import isArrayLike from '../isArrayLike';
 
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   function _arrayReduce(xf, acc, list) {
     var idx = 0;
     var len = list.length;

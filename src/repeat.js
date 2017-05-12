@@ -25,6 +25,6 @@ import times from './times';
  * @symb R.repeat(a, 1) = [a]
  * @symb R.repeat(a, 2) = [a, a]
  */
-export default _curry2(function repeat(value, n) {
+export default /* #__PURE__ */_curry2(function repeat(value, n) {
   return times(always(value), n);
 });

@@ -28,7 +28,7 @@ import _xdropWhile from './internal/_xdropWhile';
  *
  *      R.dropWhile(lteTwo, [1, 2, 3, 4, 3, 2, 1]); //=> [3, 4, 3, 2, 1]
  */
-export default _curry2(_dispatchable(['dropWhile'], _xdropWhile, function dropWhile(pred, list) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable(['dropWhile'], _xdropWhile, function dropWhile(pred, list) {
   var idx = 0;
   var len = list.length;
   while (idx < len && pred(list[idx])) {

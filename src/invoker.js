@@ -30,7 +30,7 @@ import toString from './toString';
  * @symb R.invoker(1, 'method')(a, o) = o['method'](a)
  * @symb R.invoker(2, 'method')(a, b, o) = o['method'](a, b)
  */
-export default _curry2(function invoker(arity, method) {
+export default /* #__PURE__ */_curry2(function invoker(arity, method) {
   return curryN(arity + 1, function() {
     var target = arguments[arity];
     if (target != null && _isFunction(target[method])) {

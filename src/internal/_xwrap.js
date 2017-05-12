@@ -1,4 +1,4 @@
-export default (function() {
+export default /* #__PURE__ */(function() {
   function XWrap(fn) {
     this.f = fn;
   }

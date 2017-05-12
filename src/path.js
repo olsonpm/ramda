@@ -19,7 +19,7 @@ import _curry2 from './internal/_curry2';
  *      R.path(['a', 'b'], {a: {b: 2}}); //=> 2
  *      R.path(['a', 'b'], {c: {b: 2}}); //=> undefined
  */
-export default _curry2(function path(paths, obj) {
+export default /* #__PURE__ */_curry2(function path(paths, obj) {
   var val = obj;
   var idx = 0;
   while (idx < paths.length) {

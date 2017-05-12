@@ -22,6 +22,6 @@ import _curry2 from './internal/_curry2';
  *      R.match(/a/, 'b'); //=> []
  *      R.match(/a/, null); //=> TypeError: null does not have a method named "match"
  */
-export default _curry2(function match(rx, str) {
+export default /* #__PURE__ */_curry2(function match(rx, str) {
   return str.match(rx) || [];
 });

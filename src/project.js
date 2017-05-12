@@ -23,4 +23,4 @@ import useWith from './useWith';
  *      var kids = [abby, fred];
  *      R.project(['name', 'grade'], kids); //=> [{name: 'Abby', grade: 2}, {name: 'Fred', grade: 7}]
  */
-export default useWith(_map, [pickAll, identity]); // passing `identity` gives correct arity
+export default /* #__PURE__ */useWith(_map, [pickAll, identity]); // passing `identity` gives correct arity

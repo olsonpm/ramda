@@ -23,7 +23,7 @@ import _curry3 from './internal/_curry3';
  *
  *      R.over(headLens, R.toUpper, ['foo', 'bar', 'baz']); //=> ['FOO', 'bar', 'baz']
  */
-export default (function() {
+export default /* #__PURE__ */(function() {
   // `Identity` is a functor that holds a single value, where `map` simply
   // transforms the held value with the provided function.
   var Identity = function(x) {

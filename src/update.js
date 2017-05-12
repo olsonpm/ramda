@@ -25,6 +25,6 @@ import always from './always';
  * @symb R.update(0, a, [b, c]) = [a, c]
  * @symb R.update(1, a, [b, c]) = [b, a]
  */
-export default _curry3(function update(idx, x, list) {
+export default /* #__PURE__ */_curry3(function update(idx, x, list) {
   return adjust(always(x), idx, list);
 });

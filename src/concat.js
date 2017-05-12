@@ -30,7 +30,7 @@ import toString from './toString';
  *      R.concat([4, 5, 6], [1, 2, 3]); //=> [4, 5, 6, 1, 2, 3]
  *      R.concat([], []); //=> []
  */
-export default _curry2(function concat(a, b) {
+export default /* #__PURE__ */_curry2(function concat(a, b) {
   if (a == null || !_isFunction(a.concat)) {
     throw new TypeError(toString(a) + ' does not have a method named "concat"');
   }

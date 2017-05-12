@@ -45,4 +45,4 @@ import _reduce from './internal/_reduce';
  *
  * @symb R.reduce(f, a, [b, c, d]) = f(f(f(a, b), c), d)
  */
-export default _curry3(_reduce);
+export default /* #__PURE__ */_curry3(_reduce);

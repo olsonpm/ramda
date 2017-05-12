@@ -23,4 +23,4 @@ import _curry2 from './internal/_curry2';
  *      var reciprocal = R.divide(1);
  *      reciprocal(4);   //=> 0.25
  */
-export default _curry2(function divide(a, b) { return a / b; });
+export default /* #__PURE__ */_curry2(function divide(a, b) { return a / b; });

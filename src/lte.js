@@ -22,4 +22,4 @@ import _curry2 from './internal/_curry2';
  *      R.lte('a', 'z'); //=> true
  *      R.lte('z', 'a'); //=> false
  */
-export default _curry2(function lte(a, b) { return a <= b; });
+export default /* #__PURE__ */_curry2(function lte(a, b) { return a <= b; });

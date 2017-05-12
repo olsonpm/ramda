@@ -27,4 +27,4 @@ import reject from './reject';
  *      R.partition(R.contains('s'), { a: 'sss', b: 'ttt', foo: 'bars' });
  *      // => [ { a: 'sss', foo: 'bars' }, { b: 'ttt' }  ]
  */
-export default juxt([filter, reject]);
+export default /* #__PURE__ */juxt([filter, reject]);

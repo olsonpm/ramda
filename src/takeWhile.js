@@ -29,7 +29,7 @@ import _xtakeWhile from './internal/_xtakeWhile';
  *
  *      R.takeWhile(isNotFour, [1, 2, 3, 4, 3, 2, 1]); //=> [1, 2, 3]
  */
-export default _curry2(_dispatchable(['takeWhile'], _xtakeWhile, function takeWhile(fn, list) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable(['takeWhile'], _xtakeWhile, function takeWhile(fn, list) {
   var idx = 0;
   var len = list.length;
   while (idx < len && fn(list[idx])) {

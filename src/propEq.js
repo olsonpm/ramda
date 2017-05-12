@@ -26,6 +26,6 @@ import equals from './equals';
  *      var hasBrownHair = R.propEq('hair', 'brown');
  *      R.filter(hasBrownHair, kids); //=> [fred, rusty]
  */
-export default _curry3(function propEq(name, val, obj) {
+export default /* #__PURE__ */_curry3(function propEq(name, val, obj) {
   return equals(val, obj[name]);
 });

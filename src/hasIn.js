@@ -27,6 +27,6 @@ import _curry2 from './internal/_curry2';
  *      R.hasIn('width', square);  //=> true
  *      R.hasIn('area', square);  //=> true
  */
-export default _curry2(function hasIn(prop, obj) {
+export default /* #__PURE__ */_curry2(function hasIn(prop, obj) {
   return prop in obj;
 });

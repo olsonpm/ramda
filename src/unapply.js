@@ -25,7 +25,7 @@ import _curry1 from './internal/_curry1';
  *      R.unapply(JSON.stringify)(1, 2, 3); //=> '[1,2,3]'
  * @symb R.unapply(f)(a, b) = f([a, b])
  */
-export default _curry1(function unapply(fn) {
+export default /* #__PURE__ */_curry1(function unapply(fn) {
   return function() {
     return fn(Array.prototype.slice.call(arguments, 0));
   };

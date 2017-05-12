@@ -21,7 +21,7 @@ import _curry1 from './internal/_curry1';
  *      var f = new F();
  *      R.keysIn(f); //=> ['x', 'y']
  */
-export default _curry1(function keysIn(obj) {
+export default /* #__PURE__ */_curry1(function keysIn(obj) {
   var prop;
   var ks = [];
   for (prop in obj) {

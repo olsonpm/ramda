@@ -27,6 +27,6 @@ import _equals from './internal/_equals';
  *      var b = {}; b.v = b;
  *      R.equals(a, b); //=> true
  */
-export default _curry2(function equals(a, b) {
+export default /* #__PURE__ */_curry2(function equals(a, b) {
   return _equals(a, b, [], []);
 });

@@ -20,4 +20,4 @@ import _of from './internal/_of';
  *      R.of(null); //=> [null]
  *      R.of([42]); //=> [[42]]
  */
-export default _curry1(_of);
+export default /* #__PURE__ */_curry1(_of);

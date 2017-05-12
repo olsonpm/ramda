@@ -26,6 +26,6 @@ import filter from './filter';
  *
  *      R.reject(isOdd, {a: 1, b: 2, c: 3, d: 4}); //=> {b: 2, d: 4}
  */
-export default _curry2(function reject(pred, filterable) {
+export default /* #__PURE__ */_curry2(function reject(pred, filterable) {
   return filter(_complement(pred), filterable);
 });

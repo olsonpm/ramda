@@ -24,6 +24,6 @@ import _curry2 from './internal/_curry2';
  *      complementaryAngle(30); //=> 60
  *      complementaryAngle(72); //=> 18
  */
-export default _curry2(function subtract(a, b) {
+export default /* #__PURE__ */_curry2(function subtract(a, b) {
   return Number(a) - Number(b);
 });

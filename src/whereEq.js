@@ -31,6 +31,6 @@ import where from './where';
  *      pred({a: 1, b: 2, c: 3});  //=> true
  *      pred({a: 1, b: 1});        //=> false
  */
-export default _curry2(function whereEq(spec, testObj) {
+export default /* #__PURE__ */_curry2(function whereEq(spec, testObj) {
   return where(map(equals, spec), testObj);
 });

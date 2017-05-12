@@ -28,7 +28,7 @@ import keys from './keys';
  *      R.invertObj(raceResults);
  *      //=> { 'alice': '0', 'jake':'1' }
  */
-export default _curry1(function invertObj(obj) {
+export default /* #__PURE__ */_curry1(function invertObj(obj) {
   var props = keys(obj);
   var len = props.length;
   var idx = 0;

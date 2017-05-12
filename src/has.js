@@ -26,4 +26,4 @@ import _has from './internal/_has';
  *      pointHas('y');  //=> true
  *      pointHas('z');  //=> false
  */
-export default _curry2(_has);
+export default /* #__PURE__ */_curry2(_has);

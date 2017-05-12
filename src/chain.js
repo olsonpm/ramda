@@ -27,7 +27,7 @@ import map from './map';
  *
  *      R.chain(R.append, R.head)([1, 2, 3]); //=> [1, 2, 3, 1]
  */
-export default _curry2(_dispatchable(['chain'], _xchain, function chain(fn, monad) {
+export default /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable(['chain'], _xchain, function chain(fn, monad) {
   if (typeof monad === 'function') {
     return function(x) { return fn(monad(x))(x); };
   }

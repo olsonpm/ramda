@@ -5,7 +5,7 @@ import isArrayLike from '../isArrayLike';
 import objOf from '../objOf';
 
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   var _stepCatArray = {
     '@@transducer/init': Array,
     '@@transducer/step': function(xs, x) {

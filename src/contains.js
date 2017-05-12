@@ -22,4 +22,4 @@ import _curry2 from './internal/_curry2';
  *      R.contains({ name: 'Fred' }, [{ name: 'Fred' }]); //=> true
  *      R.contains([42], [[42]]); //=> true
  */
-export default _curry2(_contains);
+export default /* #__PURE__ */_curry2(_contains);

@@ -22,6 +22,6 @@ import is from './is';
  *      R.propIs(Number, 'x', {x: 'foo'});    //=> false
  *      R.propIs(Number, 'x', {});            //=> false
  */
-export default _curry3(function propIs(type, name, obj) {
+export default /* #__PURE__ */_curry3(function propIs(type, name, obj) {
   return is(type, obj[name]);
 });

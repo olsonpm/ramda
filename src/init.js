@@ -25,4 +25,4 @@ import slice from './slice';
  *      R.init('a');    //=> ''
  *      R.init('');     //=> ''
  */
-export default slice(0, -1);
+export default /* #__PURE__ */slice(0, -1);

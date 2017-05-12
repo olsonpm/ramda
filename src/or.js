@@ -21,6 +21,6 @@ import _curry2 from './internal/_curry2';
  *      R.or(false, true); //=> true
  *      R.or(false, false); //=> false
  */
-export default _curry2(function or(a, b) {
+export default /* #__PURE__ */_curry2(function or(a, b) {
   return a || b;
 });

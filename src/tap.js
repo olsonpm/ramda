@@ -19,7 +19,7 @@ import _curry2 from './internal/_curry2';
  *      // logs 'x is 100'
  * @symb R.tap(f, a) = a
  */
-export default _curry2(function tap(fn, x) {
+export default /* #__PURE__ */_curry2(function tap(fn, x) {
   fn(x);
   return x;
 });

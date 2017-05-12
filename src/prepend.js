@@ -19,6 +19,6 @@ import _curry2 from './internal/_curry2';
  *
  *      R.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
  */
-export default _curry2(function prepend(el, list) {
+export default /* #__PURE__ */_curry2(function prepend(el, list) {
   return _concat([el], list);
 });

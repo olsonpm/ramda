@@ -26,6 +26,6 @@ import _curry3 from './internal/_curry3';
  *      R.slice(-3, -1, ['a', 'b', 'c', 'd']);      //=> ['b', 'c']
  *      R.slice(0, 3, 'ramda');                     //=> 'ram'
  */
-export default _curry3(_checkForMethod('slice', function slice(fromIndex, toIndex, list) {
+export default /* #__PURE__ */_curry3(/* #__PURE__ */_checkForMethod('slice', function slice(fromIndex, toIndex, list) {
   return Array.prototype.slice.call(list, fromIndex, toIndex);
 }));

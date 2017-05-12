@@ -3,7 +3,7 @@ import _reduce from './_reduce';
 import _xfBase from './_xfBase';
 import isArrayLike from '../isArrayLike';
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   var preservingReduced = function(xf) {
     return {
       '@@transducer/init': _xfBase.init,

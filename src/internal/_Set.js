@@ -2,7 +2,7 @@ import _contains from './_contains';
 
 
 // A simple Set type that honours R.equals semantics
-export default (function() {
+export default /* #__PURE__ */(function() {
   function _Set() {
     /* globals Set */
     this._nativeSet = typeof Set === 'function' ? new Set() : null;

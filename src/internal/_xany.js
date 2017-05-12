@@ -3,7 +3,7 @@ import _reduced from './_reduced';
 import _xfBase from './_xfBase';
 
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   function XAny(f, xf) {
     this.xf = xf;
     this.f = f;

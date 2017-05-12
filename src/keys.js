@@ -20,7 +20,7 @@ import _isArguments from './internal/_isArguments';
  *
  *      R.keys({a: 1, b: 2, c: 3}); //=> ['a', 'b', 'c']
  */
-export default (function() {
+export default /* #__PURE__ */(function() {
   // cover IE < 9 keys issues
   var hasEnumBug = !({toString: null}).propertyIsEnumerable('toString');
   var nonEnumerableProps = ['constructor', 'valueOf', 'isPrototypeOf', 'toString',

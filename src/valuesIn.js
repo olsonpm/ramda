@@ -21,7 +21,7 @@ import _curry1 from './internal/_curry1';
  *      var f = new F();
  *      R.valuesIn(f); //=> ['X', 'Y']
  */
-export default _curry1(function valuesIn(obj) {
+export default /* #__PURE__ */_curry1(function valuesIn(obj) {
   var prop;
   var vs = [];
   for (prop in obj) {

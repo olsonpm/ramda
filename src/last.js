@@ -21,4 +21,4 @@ import nth from './nth';
  *      R.last('abc'); //=> 'c'
  *      R.last(''); //=> ''
  */
-export default nth(-1);
+export default /* #__PURE__ */nth(-1);

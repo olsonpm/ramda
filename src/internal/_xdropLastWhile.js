@@ -2,7 +2,7 @@ import _curry2 from './_curry2';
 import _reduce from './_reduce';
 import _xfBase from './_xfBase';
 
-export default (function() {
+export default /* #__PURE__ */(function() {
   function XDropLastWhile(fn, xf) {
     this.f = fn;
     this.retained = [];

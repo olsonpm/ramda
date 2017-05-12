@@ -22,7 +22,7 @@ import _curry2 from './internal/_curry2';
  *      R.view(xLens, {x: 1, y: 2});  //=> 1
  *      R.view(xLens, {x: 4, y: 2});  //=> 4
  */
-export default (function() {
+export default /* #__PURE__ */(function() {
   // `Const` is a functor that effectively ignores the function given to `map`.
   var Const = function(x) {
     return {value: x, map: function() { return this; }};

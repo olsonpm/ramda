@@ -20,7 +20,7 @@ import _curry2 from './internal/_curry2';
  *
  *      R.splitWhen(R.equals(2), [1, 2, 3, 1, 2, 3]);   //=> [[1], [2, 3, 1, 2, 3]]
  */
-export default _curry2(function splitWhen(pred, list) {
+export default /* #__PURE__ */_curry2(function splitWhen(pred, list) {
   var idx = 0;
   var len = list.length;
   var prefix = [];

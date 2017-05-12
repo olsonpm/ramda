@@ -18,7 +18,7 @@ import keys from './keys';
  *
  *      R.values({a: 1, b: 2, c: 3}); //=> [1, 2, 3]
  */
-export default _curry1(function values(obj) {
+export default /* #__PURE__ */_curry1(function values(obj) {
   var props = keys(obj);
   var len = props.length;
   var vals = [];

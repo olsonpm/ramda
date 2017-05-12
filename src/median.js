@@ -18,7 +18,7 @@ import mean from './mean';
  *      R.median([7, 2, 10, 9]); //=> 8
  *      R.median([]); //=> NaN
  */
-export default _curry1(function median(list) {
+export default /* #__PURE__ */_curry1(function median(list) {
   var len = list.length;
   if (len === 0) {
     return NaN;

@@ -22,6 +22,6 @@ import _curry2 from './internal/_curry2';
  *      R.append('tests', []); //=> ['tests']
  *      R.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
-export default _curry2(function append(el, list) {
+export default /* #__PURE__ */_curry2(function append(el, list) {
   return _concat(list, [el]);
 });

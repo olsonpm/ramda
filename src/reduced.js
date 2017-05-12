@@ -25,4 +25,4 @@ import _reduced from './internal/_reduced';
  *       [1, 2, 3, 4, 5]) // [1, 2, 3]
  */
 
-export default _curry1(_reduced);
+export default /* #__PURE__ */_curry1(_reduced);

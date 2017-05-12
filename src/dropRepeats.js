@@ -23,4 +23,4 @@ import equals from './equals';
  *
  *     R.dropRepeats([1, 1, 1, 2, 3, 4, 4, 2, 2]); //=> [1, 2, 3, 4, 2]
  */
-export default _curry1(_dispatchable([], _xdropRepeatsWith(equals), dropRepeatsWith(equals)));
+export default /* #__PURE__ */_curry1(/* #__PURE__ */_dispatchable([], /* #__PURE__ */_xdropRepeatsWith(equals), /* #__PURE__ */dropRepeatsWith(equals)));

@@ -22,7 +22,7 @@ import equals from './equals';
  *      R.lastIndexOf(3, [-1,3,3,0,1,2,3,4]); //=> 6
  *      R.lastIndexOf(10, [1,2,3,4]); //=> -1
  */
-export default _curry2(function lastIndexOf(target, xs) {
+export default /* #__PURE__ */_curry2(function lastIndexOf(target, xs) {
   if (typeof xs.lastIndexOf === 'function' && !_isArray(xs)) {
     return xs.lastIndexOf(target);
   } else {

@@ -24,7 +24,7 @@ import _curry2 from './internal/_curry2';
  *      R.uniqWith(strEq)([1, '1', 1]);    //=> [1]
  *      R.uniqWith(strEq)(['1', 1, 1]);    //=> ['1']
  */
-export default _curry2(function uniqWith(pred, list) {
+export default /* #__PURE__ */_curry2(function uniqWith(pred, list) {
   var idx = 0;
   var len = list.length;
   var result = [];

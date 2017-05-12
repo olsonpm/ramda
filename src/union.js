@@ -21,4 +21,4 @@ import uniq from './uniq';
  *
  *      R.union([1, 2, 3], [2, 3, 4]); //=> [1, 2, 3, 4]
  */
-export default _curry2(compose(uniq, _concat));
+export default /* #__PURE__ */_curry2(/* #__PURE__ */compose(uniq, _concat));

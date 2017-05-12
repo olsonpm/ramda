@@ -35,7 +35,7 @@ import _curry3 from './internal/_curry3';
  *   ]
  * ]
  */
-export default _curry3(function mapAccum(fn, acc, list) {
+export default /* #__PURE__ */_curry3(function mapAccum(fn, acc, list) {
   var idx = 0;
   var len = list.length;
   var result = [];

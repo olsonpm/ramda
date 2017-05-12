@@ -38,7 +38,7 @@ import nAry from './nAry';
  *      // Add a whollop of Potato Chips
  *      // Add a whollop of Potato Ketchup
  */
-export default _curry2(function constructN(n, Fn) {
+export default /* #__PURE__ */_curry2(function constructN(n, Fn) {
   if (n > 10) {
     throw new Error('Constructor with greater than ten arguments');
   }

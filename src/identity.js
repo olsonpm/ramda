@@ -21,4 +21,4 @@ import _identity from './internal/_identity';
  *      R.identity(obj) === obj; //=> true
  * @symb R.identity(a) = a
  */
-export default _curry1(_identity);
+export default /* #__PURE__ */_curry1(_identity);

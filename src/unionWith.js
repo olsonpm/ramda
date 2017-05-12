@@ -25,6 +25,6 @@ import uniqWith from './uniqWith';
  *      var l2 = [{a: 1}, {a: 4}];
  *      R.unionWith(R.eqBy(R.prop('a')), l1, l2); //=> [{a: 1}, {a: 2}, {a: 4}]
  */
-export default _curry3(function unionWith(pred, list1, list2) {
+export default /* #__PURE__ */_curry3(function unionWith(pred, list1, list2) {
   return uniqWith(pred, _concat(list1, list2));
 });

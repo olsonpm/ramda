@@ -22,4 +22,4 @@ import _curry2 from './internal/_curry2';
  *      R.gte('a', 'z'); //=> false
  *      R.gte('z', 'a'); //=> true
  */
-export default _curry2(function gte(a, b) { return a >= b; });
+export default /* #__PURE__ */_curry2(function gte(a, b) { return a >= b; });
