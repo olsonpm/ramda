@@ -1,236 +1,234 @@
-module.exports = {
-  F: require('./src/F')
-  , T: require('./src/T')
-  , __: require('./src/__')
-  , add: require('./src/add')
-  , addIndex: require('./src/addIndex')
-  , adjust: require('./src/adjust')
-  , all: require('./src/all')
-  , allPass: require('./src/allPass')
-  , always: require('./src/always')
-  , and: require('./src/and')
-  , any: require('./src/any')
-  , anyPass: require('./src/anyPass')
-  , ap: require('./src/ap')
-  , aperture: require('./src/aperture')
-  , append: require('./src/append')
-  , apply: require('./src/apply')
-  , applySpec: require('./src/applySpec')
-  , assoc: require('./src/assoc')
-  , assocPath: require('./src/assocPath')
-  , binary: require('./src/binary')
-  , bind: require('./src/bind')
-  , both: require('./src/both')
-  , call: require('./src/call')
-  , chain: require('./src/chain')
-  , clamp: require('./src/clamp')
-  , clone: require('./src/clone')
-  , comparator: require('./src/comparator')
-  , complement: require('./src/complement')
-  , compose: require('./src/compose')
-  , composeK: require('./src/composeK')
-  , composeP: require('./src/composeP')
-  , concat: require('./src/concat')
-  , cond: require('./src/cond')
-  , construct: require('./src/construct')
-  , constructN: require('./src/constructN')
-  , contains: require('./src/contains')
-  , converge: require('./src/converge')
-  , countBy: require('./src/countBy')
-  , curry: require('./src/curry')
-  , curryN: require('./src/curryN')
-  , dec: require('./src/dec')
-  , defaultTo: require('./src/defaultTo')
-  , difference: require('./src/difference')
-  , differenceWith: require('./src/differenceWith')
-  , dissoc: require('./src/dissoc')
-  , dissocPath: require('./src/dissocPath')
-  , divide: require('./src/divide')
-  , drop: require('./src/drop')
-  , dropLast: require('./src/dropLast')
-  , dropLastWhile: require('./src/dropLastWhile')
-  , dropRepeats: require('./src/dropRepeats')
-  , dropRepeatsWith: require('./src/dropRepeatsWith')
-  , dropWhile: require('./src/dropWhile')
-  , either: require('./src/either')
-  , empty: require('./src/empty')
-  , eqBy: require('./src/eqBy')
-  , eqProps: require('./src/eqProps')
-  , equals: require('./src/equals')
-  , evolve: require('./src/evolve')
-  , filter: require('./src/filter')
-  , find: require('./src/find')
-  , findIndex: require('./src/findIndex')
-  , findLast: require('./src/findLast')
-  , findLastIndex: require('./src/findLastIndex')
-  , flatten: require('./src/flatten')
-  , flip: require('./src/flip')
-  , forEach: require('./src/forEach')
-  , fromPairs: require('./src/fromPairs')
-  , groupBy: require('./src/groupBy')
-  , groupWith: require('./src/groupWith')
-  , gt: require('./src/gt')
-  , gte: require('./src/gte')
-  , has: require('./src/has')
-  , hasIn: require('./src/hasIn')
-  , head: require('./src/head')
-  , identical: require('./src/identical')
-  , identity: require('./src/identity')
-  , ifElse: require('./src/ifElse')
-  , inc: require('./src/inc')
-  , indexBy: require('./src/indexBy')
-  , indexOf: require('./src/indexOf')
-  , init: require('./src/init')
-  , insert: require('./src/insert')
-  , insertAll: require('./src/insertAll')
-  , intersection: require('./src/intersection')
-  , intersectionWith: require('./src/intersectionWith')
-  , intersperse: require('./src/intersperse')
-  , into: require('./src/into')
-  , invert: require('./src/invert')
-  , invertObj: require('./src/invertObj')
-  , invoker: require('./src/invoker')
-  , is: require('./src/is')
-  , isArrayLike: require('./src/isArrayLike')
-  , isEmpty: require('./src/isEmpty')
-  , isNil: require('./src/isNil')
-  , join: require('./src/join')
-  , juxt: require('./src/juxt')
-  , keys: require('./src/keys')
-  , keysIn: require('./src/keysIn')
-  , last: require('./src/last')
-  , lastIndexOf: require('./src/lastIndexOf')
-  , length: require('./src/length')
-  , lens: require('./src/lens')
-  , lensIndex: require('./src/lensIndex')
-  , lensPath: require('./src/lensPath')
-  , lensProp: require('./src/lensProp')
-  , lift: require('./src/lift')
-  , liftN: require('./src/liftN')
-  , lt: require('./src/lt')
-  , lte: require('./src/lte')
-  , map: require('./src/map')
-  , mapAccum: require('./src/mapAccum')
-  , mapAccumRight: require('./src/mapAccumRight')
-  , mapObjIndexed: require('./src/mapObjIndexed')
-  , match: require('./src/match')
-  , mathMod: require('./src/mathMod')
-  , max: require('./src/max')
-  , maxBy: require('./src/maxBy')
-  , mean: require('./src/mean')
-  , median: require('./src/median')
-  , memoize: require('./src/memoize')
-  , merge: require('./src/merge')
-  , mergeAll: require('./src/mergeAll')
-  , mergeWith: require('./src/mergeWith')
-  , mergeWithKey: require('./src/mergeWithKey')
-  , min: require('./src/min')
-  , minBy: require('./src/minBy')
-  , modulo: require('./src/modulo')
-  , multiply: require('./src/multiply')
-  , nAry: require('./src/nAry')
-  , negate: require('./src/negate')
-  , none: require('./src/none')
-  , not: require('./src/not')
-  , nth: require('./src/nth')
-  , nthArg: require('./src/nthArg')
-  , objOf: require('./src/objOf')
-  , of: require('./src/of')
-  , omit: require('./src/omit')
-  , once: require('./src/once')
-  , or: require('./src/or')
-  , over: require('./src/over')
-  , pair: require('./src/pair')
-  , partial: require('./src/partial')
-  , partialRight: require('./src/partialRight')
-  , partition: require('./src/partition')
-  , path: require('./src/path')
-  , pathEq: require('./src/pathEq')
-  , pathOr: require('./src/pathOr')
-  , pathSatisfies: require('./src/pathSatisfies')
-  , pick: require('./src/pick')
-  , pickAll: require('./src/pickAll')
-  , pickBy: require('./src/pickBy')
-  , pipe: require('./src/pipe')
-  , pipeK: require('./src/pipeK')
-  , pipeP: require('./src/pipeP')
-  , pluck: require('./src/pluck')
-  , prepend: require('./src/prepend')
-  , product: require('./src/product')
-  , project: require('./src/project')
-  , prop: require('./src/prop')
-  , propEq: require('./src/propEq')
-  , propIs: require('./src/propIs')
-  , propOr: require('./src/propOr')
-  , propSatisfies: require('./src/propSatisfies')
-  , props: require('./src/props')
-  , range: require('./src/range')
-  , reduce: require('./src/reduce')
-  , reduceBy: require('./src/reduceBy')
-  , reduceRight: require('./src/reduceRight')
-  , reduceWhile: require('./src/reduceWhile')
-  , reduced: require('./src/reduced')
-  , reject: require('./src/reject')
-  , remove: require('./src/remove')
-  , repeat: require('./src/repeat')
-  , replace: require('./src/replace')
-  , reverse: require('./src/reverse')
-  , scan: require('./src/scan')
-  , sequence: require('./src/sequence')
-  , set: require('./src/set')
-  , slice: require('./src/slice')
-  , sort: require('./src/sort')
-  , sortBy: require('./src/sortBy')
-  , split: require('./src/split')
-  , splitAt: require('./src/splitAt')
-  , splitEvery: require('./src/splitEvery')
-  , splitWhen: require('./src/splitWhen')
-  , subtract: require('./src/subtract')
-  , sum: require('./src/sum')
-  , symmetricDifference: require('./src/symmetricDifference')
-  , symmetricDifferenceWith: require('./src/symmetricDifferenceWith')
-  , tail: require('./src/tail')
-  , take: require('./src/take')
-  , takeLast: require('./src/takeLast')
-  , takeLastWhile: require('./src/takeLastWhile')
-  , takeWhile: require('./src/takeWhile')
-  , tap: require('./src/tap')
-  , test: require('./src/test')
-  , times: require('./src/times')
-  , toLower: require('./src/toLower')
-  , toPairs: require('./src/toPairs')
-  , toPairsIn: require('./src/toPairsIn')
-  , toString: require('./src/toString')
-  , toUpper: require('./src/toUpper')
-  , transduce: require('./src/transduce')
-  , transpose: require('./src/transpose')
-  , traverse: require('./src/traverse')
-  , trim: require('./src/trim')
-  , tryCatch: require('./src/tryCatch')
-  , type: require('./src/type')
-  , unapply: require('./src/unapply')
-  , unary: require('./src/unary')
-  , uncurryN: require('./src/uncurryN')
-  , unfold: require('./src/unfold')
-  , union: require('./src/union')
-  , unionWith: require('./src/unionWith')
-  , uniq: require('./src/uniq')
-  , uniqBy: require('./src/uniqBy')
-  , uniqWith: require('./src/uniqWith')
-  , unless: require('./src/unless')
-  , unnest: require('./src/unnest')
-  , until: require('./src/until')
-  , update: require('./src/update')
-  , useWith: require('./src/useWith')
-  , values: require('./src/values')
-  , valuesIn: require('./src/valuesIn')
-  , view: require('./src/view')
-  , when: require('./src/when')
-  , where: require('./src/where')
-  , whereEq: require('./src/whereEq')
-  , without: require('./src/without')
-  , xprod: require('./src/xprod')
-  , zip: require('./src/zip')
-  , zipObj: require('./src/zipObj')
-  , zipWith: require('./src/zipWith')
-}
+module.exports.F = require('./src/F');
+module.exports.T = require('./src/T');
+module.exports.__ = require('./src/__');
+module.exports.add = require('./src/add');
+module.exports.addIndex = require('./src/addIndex');
+module.exports.adjust = require('./src/adjust');
+module.exports.all = require('./src/all');
+module.exports.allPass = require('./src/allPass');
+module.exports.always = require('./src/always');
+module.exports.and = require('./src/and');
+module.exports.any = require('./src/any');
+module.exports.anyPass = require('./src/anyPass');
+module.exports.ap = require('./src/ap');
+module.exports.aperture = require('./src/aperture');
+module.exports.append = require('./src/append');
+module.exports.apply = require('./src/apply');
+module.exports.applySpec = require('./src/applySpec');
+module.exports.assoc = require('./src/assoc');
+module.exports.assocPath = require('./src/assocPath');
+module.exports.binary = require('./src/binary');
+module.exports.bind = require('./src/bind');
+module.exports.both = require('./src/both');
+module.exports.call = require('./src/call');
+module.exports.chain = require('./src/chain');
+module.exports.clamp = require('./src/clamp');
+module.exports.clone = require('./src/clone');
+module.exports.comparator = require('./src/comparator');
+module.exports.complement = require('./src/complement');
+module.exports.compose = require('./src/compose');
+module.exports.composeK = require('./src/composeK');
+module.exports.composeP = require('./src/composeP');
+module.exports.concat = require('./src/concat');
+module.exports.cond = require('./src/cond');
+module.exports.construct = require('./src/construct');
+module.exports.constructN = require('./src/constructN');
+module.exports.contains = require('./src/contains');
+module.exports.converge = require('./src/converge');
+module.exports.countBy = require('./src/countBy');
+module.exports.curry = require('./src/curry');
+module.exports.curryN = require('./src/curryN');
+module.exports.dec = require('./src/dec');
+module.exports.defaultTo = require('./src/defaultTo');
+module.exports.difference = require('./src/difference');
+module.exports.differenceWith = require('./src/differenceWith');
+module.exports.dissoc = require('./src/dissoc');
+module.exports.dissocPath = require('./src/dissocPath');
+module.exports.divide = require('./src/divide');
+module.exports.drop = require('./src/drop');
+module.exports.dropLast = require('./src/dropLast');
+module.exports.dropLastWhile = require('./src/dropLastWhile');
+module.exports.dropRepeats = require('./src/dropRepeats');
+module.exports.dropRepeatsWith = require('./src/dropRepeatsWith');
+module.exports.dropWhile = require('./src/dropWhile');
+module.exports.either = require('./src/either');
+module.exports.empty = require('./src/empty');
+module.exports.eqBy = require('./src/eqBy');
+module.exports.eqProps = require('./src/eqProps');
+module.exports.equals = require('./src/equals');
+module.exports.evolve = require('./src/evolve');
+module.exports.filter = require('./src/filter');
+module.exports.find = require('./src/find');
+module.exports.findIndex = require('./src/findIndex');
+module.exports.findLast = require('./src/findLast');
+module.exports.findLastIndex = require('./src/findLastIndex');
+module.exports.flatten = require('./src/flatten');
+module.exports.flip = require('./src/flip');
+module.exports.forEach = require('./src/forEach');
+module.exports.fromPairs = require('./src/fromPairs');
+module.exports.groupBy = require('./src/groupBy');
+module.exports.groupWith = require('./src/groupWith');
+module.exports.gt = require('./src/gt');
+module.exports.gte = require('./src/gte');
+module.exports.has = require('./src/has');
+module.exports.hasIn = require('./src/hasIn');
+module.exports.head = require('./src/head');
+module.exports.identical = require('./src/identical');
+module.exports.identity = require('./src/identity');
+module.exports.ifElse = require('./src/ifElse');
+module.exports.inc = require('./src/inc');
+module.exports.indexBy = require('./src/indexBy');
+module.exports.indexOf = require('./src/indexOf');
+module.exports.init = require('./src/init');
+module.exports.insert = require('./src/insert');
+module.exports.insertAll = require('./src/insertAll');
+module.exports.intersection = require('./src/intersection');
+module.exports.intersectionWith = require('./src/intersectionWith');
+module.exports.intersperse = require('./src/intersperse');
+module.exports.into = require('./src/into');
+module.exports.invert = require('./src/invert');
+module.exports.invertObj = require('./src/invertObj');
+module.exports.invoker = require('./src/invoker');
+module.exports.is = require('./src/is');
+module.exports.isArrayLike = require('./src/isArrayLike');
+module.exports.isEmpty = require('./src/isEmpty');
+module.exports.isNil = require('./src/isNil');
+module.exports.join = require('./src/join');
+module.exports.juxt = require('./src/juxt');
+module.exports.keys = require('./src/keys');
+module.exports.keysIn = require('./src/keysIn');
+module.exports.last = require('./src/last');
+module.exports.lastIndexOf = require('./src/lastIndexOf');
+module.exports.length = require('./src/length');
+module.exports.lens = require('./src/lens');
+module.exports.lensIndex = require('./src/lensIndex');
+module.exports.lensPath = require('./src/lensPath');
+module.exports.lensProp = require('./src/lensProp');
+module.exports.lift = require('./src/lift');
+module.exports.liftN = require('./src/liftN');
+module.exports.lt = require('./src/lt');
+module.exports.lte = require('./src/lte');
+module.exports.map = require('./src/map');
+module.exports.mapAccum = require('./src/mapAccum');
+module.exports.mapAccumRight = require('./src/mapAccumRight');
+module.exports.mapObjIndexed = require('./src/mapObjIndexed');
+module.exports.match = require('./src/match');
+module.exports.mathMod = require('./src/mathMod');
+module.exports.max = require('./src/max');
+module.exports.maxBy = require('./src/maxBy');
+module.exports.mean = require('./src/mean');
+module.exports.median = require('./src/median');
+module.exports.memoize = require('./src/memoize');
+module.exports.merge = require('./src/merge');
+module.exports.mergeAll = require('./src/mergeAll');
+module.exports.mergeWith = require('./src/mergeWith');
+module.exports.mergeWithKey = require('./src/mergeWithKey');
+module.exports.min = require('./src/min');
+module.exports.minBy = require('./src/minBy');
+module.exports.modulo = require('./src/modulo');
+module.exports.multiply = require('./src/multiply');
+module.exports.nAry = require('./src/nAry');
+module.exports.negate = require('./src/negate');
+module.exports.none = require('./src/none');
+module.exports.not = require('./src/not');
+module.exports.nth = require('./src/nth');
+module.exports.nthArg = require('./src/nthArg');
+module.exports.objOf = require('./src/objOf');
+module.exports.of = require('./src/of');
+module.exports.omit = require('./src/omit');
+module.exports.once = require('./src/once');
+module.exports.or = require('./src/or');
+module.exports.over = require('./src/over');
+module.exports.pair = require('./src/pair');
+module.exports.partial = require('./src/partial');
+module.exports.partialRight = require('./src/partialRight');
+module.exports.partition = require('./src/partition');
+module.exports.path = require('./src/path');
+module.exports.pathEq = require('./src/pathEq');
+module.exports.pathOr = require('./src/pathOr');
+module.exports.pathSatisfies = require('./src/pathSatisfies');
+module.exports.pick = require('./src/pick');
+module.exports.pickAll = require('./src/pickAll');
+module.exports.pickBy = require('./src/pickBy');
+module.exports.pipe = require('./src/pipe');
+module.exports.pipeK = require('./src/pipeK');
+module.exports.pipeP = require('./src/pipeP');
+module.exports.pluck = require('./src/pluck');
+module.exports.prepend = require('./src/prepend');
+module.exports.product = require('./src/product');
+module.exports.project = require('./src/project');
+module.exports.prop = require('./src/prop');
+module.exports.propEq = require('./src/propEq');
+module.exports.propIs = require('./src/propIs');
+module.exports.propOr = require('./src/propOr');
+module.exports.propSatisfies = require('./src/propSatisfies');
+module.exports.props = require('./src/props');
+module.exports.range = require('./src/range');
+module.exports.reduce = require('./src/reduce');
+module.exports.reduceBy = require('./src/reduceBy');
+module.exports.reduceRight = require('./src/reduceRight');
+module.exports.reduceWhile = require('./src/reduceWhile');
+module.exports.reduced = require('./src/reduced');
+module.exports.reject = require('./src/reject');
+module.exports.remove = require('./src/remove');
+module.exports.repeat = require('./src/repeat');
+module.exports.replace = require('./src/replace');
+module.exports.reverse = require('./src/reverse');
+module.exports.scan = require('./src/scan');
+module.exports.sequence = require('./src/sequence');
+module.exports.set = require('./src/set');
+module.exports.slice = require('./src/slice');
+module.exports.sort = require('./src/sort');
+module.exports.sortBy = require('./src/sortBy');
+module.exports.split = require('./src/split');
+module.exports.splitAt = require('./src/splitAt');
+module.exports.splitEvery = require('./src/splitEvery');
+module.exports.splitWhen = require('./src/splitWhen');
+module.exports.subtract = require('./src/subtract');
+module.exports.sum = require('./src/sum');
+module.exports.symmetricDifference = require('./src/symmetricDifference');
+module.exports.symmetricDifferenceWith = require('./src/symmetricDifferenceWith');
+module.exports.tail = require('./src/tail');
+module.exports.take = require('./src/take');
+module.exports.takeLast = require('./src/takeLast');
+module.exports.takeLastWhile = require('./src/takeLastWhile');
+module.exports.takeWhile = require('./src/takeWhile');
+module.exports.tap = require('./src/tap');
+module.exports.test = require('./src/test');
+module.exports.times = require('./src/times');
+module.exports.toLower = require('./src/toLower');
+module.exports.toPairs = require('./src/toPairs');
+module.exports.toPairsIn = require('./src/toPairsIn');
+module.exports.toString = require('./src/toString');
+module.exports.toUpper = require('./src/toUpper');
+module.exports.transduce = require('./src/transduce');
+module.exports.transpose = require('./src/transpose');
+module.exports.traverse = require('./src/traverse');
+module.exports.trim = require('./src/trim');
+module.exports.tryCatch = require('./src/tryCatch');
+module.exports.type = require('./src/type');
+module.exports.unapply = require('./src/unapply');
+module.exports.unary = require('./src/unary');
+module.exports.uncurryN = require('./src/uncurryN');
+module.exports.unfold = require('./src/unfold');
+module.exports.union = require('./src/union');
+module.exports.unionWith = require('./src/unionWith');
+module.exports.uniq = require('./src/uniq');
+module.exports.uniqBy = require('./src/uniqBy');
+module.exports.uniqWith = require('./src/uniqWith');
+module.exports.unless = require('./src/unless');
+module.exports.unnest = require('./src/unnest');
+module.exports.until = require('./src/until');
+module.exports.update = require('./src/update');
+module.exports.useWith = require('./src/useWith');
+module.exports.values = require('./src/values');
+module.exports.valuesIn = require('./src/valuesIn');
+module.exports.view = require('./src/view');
+module.exports.when = require('./src/when');
+module.exports.where = require('./src/where');
+module.exports.whereEq = require('./src/whereEq');
+module.exports.without = require('./src/without');
+module.exports.xprod = require('./src/xprod');
+module.exports.zip = require('./src/zip');
+module.exports.zipObj = require('./src/zipObj');
+module.exports.zipWith = require('./src/zipWith');
