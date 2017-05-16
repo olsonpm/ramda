@@ -1,4 +1,4 @@
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XWrap(fn) {
     this.f = fn;
   }

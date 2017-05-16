@@ -3,7 +3,7 @@ var bind = require('../bind');
 var isArrayLike = require('../isArrayLike');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function _arrayReduce(xf, acc, list) {
     var idx = 0;
     var len = list.length;

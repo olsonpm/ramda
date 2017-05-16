@@ -2,7 +2,7 @@ var _contains = require('./_contains');
 
 
 // A simple Set type that honours R.equals semantics
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function _Set() {
     /* globals Set */
     this._nativeSet = typeof Set === 'function' ? new Set() : null;

@@ -2,7 +2,7 @@ var _curry2 = require('./_curry2');
 var _xfBase = require('./_xfBase');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XFindLastIndex(f, xf) {
     this.xf = xf;
     this.f = f;

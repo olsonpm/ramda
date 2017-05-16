@@ -5,7 +5,7 @@ var isArrayLike = require('../isArrayLike');
 var objOf = require('../objOf');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   var _stepCatArray = {
     '@@transducer/init': Array,
     '@@transducer/step': function(xs, x) {

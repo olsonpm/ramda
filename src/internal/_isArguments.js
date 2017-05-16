@@ -1,7 +1,7 @@
 var _has = require('./_has');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   var toString = Object.prototype.toString;
   return toString.call(arguments) === '[object Arguments]' ?
     function _isArguments(x) { return toString.call(x) === '[object Arguments]'; } :

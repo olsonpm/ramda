@@ -3,7 +3,7 @@ var _reduce = require('./_reduce');
 var _xfBase = require('./_xfBase');
 var isArrayLike = require('../isArrayLike');
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   var preservingReduced = function(xf) {
     return {
       '@@transducer/init': _xfBase.init,

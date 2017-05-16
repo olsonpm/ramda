@@ -4,7 +4,7 @@ var _slice = require('./_slice');
 var _xfBase = require('./_xfBase');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XAperture(n, xf) {
     this.xf = xf;
     this.pos = 0;

@@ -2,7 +2,7 @@ var _curry2 = require('./_curry2');
 var _reduce = require('./_reduce');
 var _xfBase = require('./_xfBase');
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XDropLastWhile(fn, xf) {
     this.f = fn;
     this.retained = [];

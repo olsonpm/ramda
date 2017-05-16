@@ -1,7 +1,7 @@
 var _curry2 = require('./_curry2');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XDropRepeatsWith(pred, xf) {
     this.xf = xf;
     this.pred = pred;

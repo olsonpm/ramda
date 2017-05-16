@@ -2,7 +2,7 @@ var _curry2 = require('./_curry2');
 var _reduced = require('./_reduced');
 var _xfBase = require('./_xfBase');
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XTake(n, xf) {
     this.xf = xf;
     this.n = n;

@@ -3,7 +3,7 @@ var _has = require('./_has');
 var _xfBase = require('./_xfBase');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XReduceBy(valueFn, valueAcc, keyFn, xf) {
     this.valueFn = valueFn;
     this.valueAcc = valueAcc;

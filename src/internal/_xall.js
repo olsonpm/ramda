@@ -3,7 +3,7 @@ var _reduced = require('./_reduced');
 var _xfBase = require('./_xfBase');
 
 
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   function XAll(f, xf) {
     this.xf = xf;
     this.f = f;
