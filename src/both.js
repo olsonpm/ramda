@@ -31,7 +31,7 @@ var lift = require('./lift');
  *      f(100); //=> true
  *      f(101); //=> false
  */
-module.exports = _curry2(function both(f, g) {
+module.exports = /* #__PURE__ */_curry2(function both(f, g) {
   return _isFunction(f) ?
     function _both() {
       return f.apply(this, arguments) && g.apply(this, arguments);

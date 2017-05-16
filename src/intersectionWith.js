@@ -38,7 +38,7 @@ var uniqWith = require('./uniqWith');
  *      R.intersectionWith(R.eqBy(R.prop('id')), buffaloSpringfield, csny);
  *      //=> [{id: 456, name: 'Stephen Stills'}, {id: 177, name: 'Neil Young'}]
  */
-module.exports = _curry3(function intersectionWith(pred, list1, list2) {
+module.exports = /* #__PURE__ */_curry3(function intersectionWith(pred, list1, list2) {
   var lookupList, filteredList;
   if (list1.length > list2.length) {
     lookupList = list1;

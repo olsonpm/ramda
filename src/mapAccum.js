@@ -35,7 +35,7 @@ var _curry3 = require('./internal/_curry3');
  *   ]
  * ]
  */
-module.exports = _curry3(function mapAccum(fn, acc, list) {
+module.exports = /* #__PURE__ */_curry3(function mapAccum(fn, acc, list) {
   var idx = 0;
   var len = list.length;
   var result = [];

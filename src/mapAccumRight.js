@@ -38,7 +38,7 @@ var _curry3 = require('./internal/_curry3');
  *   ]
  * ]
  */
-module.exports = _curry3(function mapAccumRight(fn, acc, list) {
+module.exports = /* #__PURE__ */_curry3(function mapAccumRight(fn, acc, list) {
   var idx = list.length - 1;
   var result = [];
   var tuple = [acc];

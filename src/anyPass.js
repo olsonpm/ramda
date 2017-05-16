@@ -29,7 +29,7 @@ var reduce = require('./reduce');
  *      gte(2, 2); //=> true
  *      gte(2, 3); //=> false
  */
-module.exports = _curry1(function anyPass(preds) {
+module.exports = /* #__PURE__ */_curry1(function anyPass(preds) {
   return curryN(reduce(max, 0, pluck('length', preds)), function() {
     var idx = 0;
     var len = preds.length;

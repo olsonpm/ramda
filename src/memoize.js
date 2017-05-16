@@ -30,7 +30,7 @@ var toString = require('./toString');
  *      factorial(5); //=> 120
  *      count; //=> 1
  */
-module.exports = _curry1(function memoize(fn) {
+module.exports = /* #__PURE__ */_curry1(function memoize(fn) {
   var cache = {};
   return _arity(fn.length, function() {
     var key = toString(arguments);

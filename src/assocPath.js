@@ -23,7 +23,7 @@ var assoc = require('./assoc');
  *
  *      R.assocPath(['a', 'b', 'c'], 42, {a: {b: {c: 0}}}); //=> {a: {b: {c: 42}}}
  */
-module.exports = _curry3(function assocPath(path, val, obj) {
+module.exports = /* #__PURE__ */_curry3(function assocPath(path, val, obj) {
   switch (path.length) {
     case 0:
       return val;

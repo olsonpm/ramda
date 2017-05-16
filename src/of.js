@@ -20,4 +20,4 @@ var _of = require('./internal/_of');
  *      R.of(null); //=> [null]
  *      R.of([42]); //=> [[42]]
  */
-module.exports = _curry1(_of);
+module.exports = /* #__PURE__ */_curry1(_of);

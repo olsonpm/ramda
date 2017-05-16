@@ -21,7 +21,7 @@ var _curry3 = require('./internal/_curry3');
  *      var factorials = R.scan(R.multiply, 1, numbers); //=> [1, 1, 2, 6, 24]
  * @symb R.scan(f, a, [b, c]) = [a, f(a, b), f(f(a, b), c)]
  */
-module.exports = _curry3(function scan(fn, acc, list) {
+module.exports = /* #__PURE__ */_curry3(function scan(fn, acc, list) {
   var idx = 0;
   var len = list.length;
   var result = [acc];

@@ -20,6 +20,6 @@ var path = require('./path');
  *
  *      R.pathSatisfies(y => y > 0, ['x', 'y'], {x: {y: 2}}); //=> true
  */
-module.exports = _curry3(function pathSatisfies(pred, propPath, obj) {
+module.exports = /* #__PURE__ */_curry3(function pathSatisfies(pred, propPath, obj) {
   return propPath.length > 0 && pred(path(propPath, obj));
 });

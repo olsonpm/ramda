@@ -19,7 +19,7 @@ var _curry2 = require('./internal/_curry2');
  *      // logs 'x is 100'
  * @symb R.tap(f, a) = a
  */
-module.exports = _curry2(function tap(fn, x) {
+module.exports = /* #__PURE__ */_curry2(function tap(fn, x) {
   fn(x);
   return x;
 });

@@ -24,7 +24,7 @@ var _curry2 = require('./internal/_curry2');
  *      R.tryCatch(R.prop('x'), R.F)({x: true}); //=> true
  *      R.tryCatch(R.prop('x'), R.F)(null);      //=> false
  */
-module.exports = _curry2(function _tryCatch(tryer, catcher) {
+module.exports = /* #__PURE__ */_curry2(function _tryCatch(tryer, catcher) {
   return _arity(tryer.length, function() {
     try {
       return tryer.apply(this, arguments);

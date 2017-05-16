@@ -22,4 +22,4 @@ var _curry2 = require('./internal/_curry2');
  *      R.gt('a', 'z'); //=> false
  *      R.gt('z', 'a'); //=> true
  */
-module.exports = _curry2(function gt(a, b) { return a > b; });
+module.exports = /* #__PURE__ */_curry2(function gt(a, b) { return a > b; });

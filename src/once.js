@@ -21,7 +21,7 @@ var _curry1 = require('./internal/_curry1');
  *      addOneOnce(10); //=> 11
  *      addOneOnce(addOneOnce(50)); //=> 11
  */
-module.exports = _curry1(function once(fn) {
+module.exports = /* #__PURE__ */_curry1(function once(fn) {
   var called = false;
   var result;
   return _arity(fn.length, function() {

@@ -26,4 +26,4 @@ var reject = require('./reject');
  *      R.partition(R.contains('s'), { a: 'sss', b: 'ttt', foo: 'bars' });
  *      // => [ { a: 'sss', foo: 'bars' }, { b: 'ttt' }  ]
  */
-module.exports = juxt([filter, reject]);
+module.exports = /* #__PURE__ */juxt([filter, reject]);

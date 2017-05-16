@@ -31,7 +31,7 @@ var nAry = require('./nAry');
  *      ];
  *      R.map(R.constructN(1, Widget), allConfigs); // a list of Widgets
  */
-module.exports = _curry2(function constructN(n, Fn) {
+module.exports = /* #__PURE__ */_curry2(function constructN(n, Fn) {
   if (n > 10) {
     throw new Error('Constructor with greater than ten arguments');
   }

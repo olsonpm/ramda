@@ -20,7 +20,7 @@ var _curry2 = require('./internal/_curry2');
  *      R.difference([1,2,3,4], [7,6,5,4,3]); //=> [1,2]
  *      R.difference([7,6,5,4,3], [1,2,3,4]); //=> [7,6,5]
  */
-module.exports = _curry2(function difference(first, second) {
+module.exports = /* #__PURE__ */_curry2(function difference(first, second) {
   var out = [];
   var idx = 0;
   var firstLen = first.length;

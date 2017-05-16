@@ -21,7 +21,7 @@ var _curry2 = require('./internal/_curry2');
  *      var isUpperCase = (val, key) => key.toUpperCase() === key;
  *      R.pickBy(isUpperCase, {a: 1, b: 2, A: 3, B: 4}); //=> {A: 3, B: 4}
  */
-module.exports = _curry2(function pickBy(test, obj) {
+module.exports = /* #__PURE__ */_curry2(function pickBy(test, obj) {
   var result = {};
   for (var prop in obj) {
     if (test(obj[prop], prop, obj)) {

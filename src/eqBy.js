@@ -19,6 +19,6 @@ var equals = require('./equals');
  *
  *      R.eqBy(Math.abs, 5, -5); //=> true
  */
-module.exports = _curry3(function eqBy(f, x, y) {
+module.exports = /* #__PURE__ */_curry3(function eqBy(f, x, y) {
   return equals(f(x), f(y));
 });

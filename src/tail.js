@@ -29,4 +29,4 @@ var slice = require('./slice');
  *      R.tail('a');    //=> ''
  *      R.tail('');     //=> ''
  */
-module.exports = _checkForMethod('tail', slice(1, Infinity));
+module.exports = /* #__PURE__ */_checkForMethod('tail', /* #__PURE__ */slice(1, Infinity));

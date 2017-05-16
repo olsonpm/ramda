@@ -21,4 +21,4 @@ var uniq = require('./uniq');
  *
  *      R.union([1, 2, 3], [2, 3, 4]); //=> [1, 2, 3, 4]
  */
-module.exports = _curry2(compose(uniq, _concat));
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */compose(uniq, _concat));

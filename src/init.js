@@ -25,4 +25,4 @@ var slice = require('./slice');
  *      R.init('a');    //=> ''
  *      R.init('');     //=> ''
  */
-module.exports = slice(0, -1);
+module.exports = /* #__PURE__ */slice(0, -1);

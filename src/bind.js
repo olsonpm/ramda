@@ -24,7 +24,7 @@ var _curry2 = require('./internal/_curry2');
  *      // logs {a: 2}
  * @symb R.bind(f, o)(a, b) = f.call(o, a, b)
  */
-module.exports = _curry2(function bind(fn, thisObj) {
+module.exports = /* #__PURE__ */_curry2(function bind(fn, thisObj) {
   return _arity(fn.length, function() {
     return fn.apply(thisObj, arguments);
   });

@@ -28,7 +28,7 @@ var keys = require('./keys');
  *      R.invertObj(raceResults);
  *      //=> { 'alice': '0', 'jake':'1' }
  */
-module.exports = _curry1(function invertObj(obj) {
+module.exports = /* #__PURE__ */_curry1(function invertObj(obj) {
   var props = keys(obj);
   var len = props.length;
   var idx = 0;

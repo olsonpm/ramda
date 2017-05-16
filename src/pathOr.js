@@ -21,6 +21,6 @@ var path = require('./path');
  *      R.pathOr('N/A', ['a', 'b'], {a: {b: 2}}); //=> 2
  *      R.pathOr('N/A', ['a', 'b'], {c: {b: 2}}); //=> "N/A"
  */
-module.exports = _curry3(function pathOr(d, p, obj) {
+module.exports = /* #__PURE__ */_curry3(function pathOr(d, p, obj) {
   return defaultTo(d, path(p, obj));
 });

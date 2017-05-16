@@ -26,6 +26,6 @@ var equals = require('./equals');
  *      var hasBrownHair = R.propEq('hair', 'brown');
  *      R.filter(hasBrownHair, kids); //=> [fred, rusty]
  */
-module.exports = _curry3(function propEq(name, val, obj) {
+module.exports = /* #__PURE__ */_curry3(function propEq(name, val, obj) {
   return equals(val, obj[name]);
 });

@@ -20,7 +20,7 @@ var _slice = require('./internal/_slice');
  *
  *      R.insert(2, 'x', [1,2,3,4]); //=> [1,2,'x',3,4]
  */
-module.exports = _curry3(function insert(idx, elt, list) {
+module.exports = /* #__PURE__ */_curry3(function insert(idx, elt, list) {
   idx = idx < list.length && idx >= 0 ? idx : list.length;
   var result = _slice(list);
   result.splice(idx, 0, elt);

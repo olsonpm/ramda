@@ -31,7 +31,7 @@ var or = require('./or');
  *      f(101); //=> true
  *      f(8); //=> true
  */
-module.exports = _curry2(function either(f, g) {
+module.exports = /* #__PURE__ */_curry2(function either(f, g) {
   return _isFunction(f) ?
     function _either() {
       return f.apply(this, arguments) || g.apply(this, arguments);

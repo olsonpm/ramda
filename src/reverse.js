@@ -27,7 +27,7 @@ var _slice = require('./internal/_slice');
  *      R.reverse('a');        //=> 'a'
  *      R.reverse('');         //=> ''
  */
-module.exports = _curry1(function reverse(list) {
+module.exports = /* #__PURE__ */_curry1(function reverse(list) {
   return _isString(list) ? list.split('').reverse().join('') :
                            _slice(list).reverse();
 });

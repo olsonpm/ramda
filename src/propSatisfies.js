@@ -19,6 +19,6 @@ var _curry3 = require('./internal/_curry3');
  *
  *      R.propSatisfies(x => x > 0, 'x', {x: 1, y: 2}); //=> true
  */
-module.exports = _curry3(function propSatisfies(pred, name, obj) {
+module.exports = /* #__PURE__ */_curry3(function propSatisfies(pred, name, obj) {
   return pred(obj[name]);
 });

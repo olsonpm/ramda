@@ -22,6 +22,6 @@ var _curry2 = require('./internal/_curry2');
  *      defaultTo42('Ramda');  //=> 'Ramda'
  *      defaultTo42(parseInt('string')); //=> 42
  */
-module.exports = _curry2(function defaultTo(d, v) {
+module.exports = /* #__PURE__ */_curry2(function defaultTo(d, v) {
   return v == null || v !== v ? d : v;
 });

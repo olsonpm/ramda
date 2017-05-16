@@ -21,7 +21,7 @@ var _slice = require('./internal/_slice');
  *
  *      R.splitWhen(R.equals(2), [1, 2, 3, 1, 2, 3]);   //=> [[1], [2, 3, 1, 2, 3]]
  */
-module.exports = _curry2(function splitWhen(pred, list) {
+module.exports = /* #__PURE__ */_curry2(function splitWhen(pred, list) {
   var idx = 0;
   var len = list.length;
   var prefix = [];

@@ -27,7 +27,7 @@ var curryN = require('./curryN');
  *      incCount({});           //=> { count: 1 }
  *      incCount({ count: 1 }); //=> { count: 2 }
  */
-module.exports = _curry3(function ifElse(condition, onTrue, onFalse) {
+module.exports = /* #__PURE__ */_curry3(function ifElse(condition, onTrue, onFalse) {
   return curryN(Math.max(condition.length, onTrue.length, onFalse.length),
     function _ifElse() {
       return condition.apply(this, arguments) ? onTrue.apply(this, arguments) : onFalse.apply(this, arguments);

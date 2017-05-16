@@ -29,6 +29,6 @@ var nAry = require('./nAry');
  *      takesOneArg(1, 2); //=> [1, undefined]
  * @symb R.unary(f)(a, b, c) = f(a)
  */
-module.exports = _curry1(function unary(fn) {
+module.exports = /* #__PURE__ */_curry1(function unary(fn) {
   return nAry(1, fn);
 });

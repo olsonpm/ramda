@@ -21,7 +21,7 @@ var nth = require('./nth');
  * @symb R.nthArg(0)(a, b, c) = a
  * @symb R.nthArg(1)(a, b, c) = b
  */
-module.exports = _curry1(function nthArg(n) {
+module.exports = /* #__PURE__ */_curry1(function nthArg(n) {
   var arity = n < 0 ? 1 : n + 1;
   return curryN(arity, function() {
     return nth(n, arguments);

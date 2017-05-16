@@ -19,7 +19,7 @@ var slice = require('./slice');
  *      R.splitEvery(3, [1, 2, 3, 4, 5, 6, 7]); //=> [[1, 2, 3], [4, 5, 6], [7]]
  *      R.splitEvery(3, 'foobarbaz'); //=> ['foo', 'bar', 'baz']
  */
-module.exports = _curry2(function splitEvery(n, list) {
+module.exports = /* #__PURE__ */_curry2(function splitEvery(n, list) {
   if (n <= 0) {
     throw new Error('First argument to splitEvery must be a positive integer');
   }

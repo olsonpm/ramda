@@ -24,7 +24,7 @@ var _slice = require('./internal/_slice');
  *
  *      R.takeLastWhile(isNotOne, [1, 2, 3, 4]); //=> [2, 3, 4]
  */
-module.exports = _curry2(function takeLastWhile(fn, list) {
+module.exports = /* #__PURE__ */_curry2(function takeLastWhile(fn, list) {
   var idx = list.length - 1;
   while (idx >= 0 && fn(list[idx])) {
     idx -= 1;

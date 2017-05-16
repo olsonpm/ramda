@@ -18,4 +18,4 @@ var _curry2 = require('./internal/_curry2');
  *      R.max(789, 123); //=> 789
  *      R.max('a', 'b'); //=> 'b'
  */
-module.exports = _curry2(function max(a, b) { return b > a ? b : a; });
+module.exports = /* #__PURE__ */_curry2(function max(a, b) { return b > a ? b : a; });

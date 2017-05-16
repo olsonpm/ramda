@@ -25,4 +25,4 @@ var equals = require('./equals');
  *
  *     R.dropRepeats([1, 1, 1, 2, 3, 4, 4, 2, 2]); //=> [1, 2, 3, 4, 2]
  */
-module.exports = _curry1(_dispatchable('dropRepeats', _xdropRepeatsWith(equals), dropRepeatsWith(equals)));
+module.exports = /* #__PURE__ */_curry1(/* #__PURE__ */_dispatchable('dropRepeats', /* #__PURE__ */_xdropRepeatsWith(equals), /* #__PURE__ */dropRepeatsWith(equals)));

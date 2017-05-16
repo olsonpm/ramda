@@ -21,7 +21,7 @@ var toString = require('./toString');
  *      R.test(/^x/, 'xyz'); //=> true
  *      R.test(/^y/, 'xyz'); //=> false
  */
-module.exports = _curry2(function test(pattern, str) {
+module.exports = /* #__PURE__ */_curry2(function test(pattern, str) {
   if (!_isRegExp(pattern)) {
     throw new TypeError('‘test’ requires a value of type RegExp as its first argument; received ' + toString(pattern));
   }

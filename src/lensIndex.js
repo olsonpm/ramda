@@ -24,6 +24,6 @@ var update = require('./update');
  *      R.set(headLens, 'x', ['a', 'b', 'c']);        //=> ['x', 'b', 'c']
  *      R.over(headLens, R.toUpper, ['a', 'b', 'c']); //=> ['A', 'b', 'c']
  */
-module.exports = _curry1(function lensIndex(n) {
+module.exports = /* #__PURE__ */_curry1(function lensIndex(n) {
   return lens(nth(n), update(n));
 });

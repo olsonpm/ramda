@@ -26,6 +26,6 @@ var _curry3 = require('./internal/_curry3');
  *      coerceArray([1, 2, 3]); //=> [1, 2, 3]
  *      coerceArray(1);         //=> [1]
  */
-module.exports = _curry3(function unless(pred, whenFalseFn, x) {
+module.exports = /* #__PURE__ */_curry3(function unless(pred, whenFalseFn, x) {
   return pred(x) ? x : whenFalseFn(x);
 });

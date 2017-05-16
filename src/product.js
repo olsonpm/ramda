@@ -17,4 +17,4 @@ var reduce = require('./reduce');
  *
  *      R.product([2,4,6,8,100,1]); //=> 38400
  */
-module.exports = reduce(multiply, 1);
+module.exports = /* #__PURE__ */reduce(multiply, 1);

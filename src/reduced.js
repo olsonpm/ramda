@@ -25,4 +25,4 @@ var _reduced = require('./internal/_reduced');
  *        [1, 2, 3, 4, 5]) // 10
  */
 
-module.exports = _curry1(_reduced);
+module.exports = /* #__PURE__ */_curry1(_reduced);

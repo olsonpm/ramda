@@ -36,7 +36,7 @@ var _curry2 = require('./internal/_curry2');
  *      // logs 8
  * @symb R.forEach(f, [a, b, c]) = [a, b, c]
  */
-module.exports = _curry2(_checkForMethod('forEach', function forEach(fn, list) {
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */_checkForMethod('forEach', function forEach(fn, list) {
   var len = list.length;
   var idx = 0;
   while (idx < len) {

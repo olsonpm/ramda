@@ -19,4 +19,4 @@ var uniqBy = require('./uniqBy');
  *      R.uniq([1, '1']);     //=> [1, '1']
  *      R.uniq([[42], [42]]); //=> [[42]]
  */
-module.exports = uniqBy(identity);
+module.exports = /* #__PURE__ */uniqBy(identity);

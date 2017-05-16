@@ -29,7 +29,7 @@ var reduceRight = require('./reduceRight');
  *      R.sequence(R.of, Just([1, 2, 3])); //=> [Just(1), Just(2), Just(3)]
  *      R.sequence(R.of, Nothing());       //=> [Nothing()]
  */
-module.exports = _curry2(function sequence(of, traversable) {
+module.exports = /* #__PURE__ */_curry2(function sequence(of, traversable) {
   return typeof traversable.sequence === 'function' ?
     traversable.sequence(of) :
     reduceRight(function(acc, x) { return ap(map(prepend, x), acc); },

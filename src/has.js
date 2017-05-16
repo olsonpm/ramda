@@ -26,4 +26,4 @@ var _has = require('./internal/_has');
  *      pointHas('y');  //=> true
  *      pointHas('z');  //=> false
  */
-module.exports = _curry2(_has);
+module.exports = /* #__PURE__ */_curry2(_has);

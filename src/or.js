@@ -21,6 +21,6 @@ var _curry2 = require('./internal/_curry2');
  *      R.or(false, true); //=> true
  *      R.or(false, false); //=> false
  */
-module.exports = _curry2(function or(a, b) {
+module.exports = /* #__PURE__ */_curry2(function or(a, b) {
   return a || b;
 });

@@ -24,6 +24,6 @@ var drop = require('./drop');
  *      R.takeLast(4, ['foo', 'bar', 'baz']); //=> ['foo', 'bar', 'baz']
  *      R.takeLast(3, 'ramda');               //=> 'mda'
  */
-module.exports = _curry2(function takeLast(n, xs) {
+module.exports = /* #__PURE__ */_curry2(function takeLast(n, xs) {
   return drop(n >= 0 ? xs.length - n : 0, xs);
 });

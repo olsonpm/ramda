@@ -16,4 +16,4 @@ var invoker = require('./invoker');
  *
  *      R.toLower('XYZ'); //=> 'xyz'
  */
-module.exports = invoker(0, 'toLowerCase');
+module.exports = /* #__PURE__ */invoker(0, 'toLowerCase');

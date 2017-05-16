@@ -19,6 +19,6 @@ var _curry2 = require('./internal/_curry2');
  *
  *      R.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
  */
-module.exports = _curry2(function prepend(el, list) {
+module.exports = /* #__PURE__ */_curry2(function prepend(el, list) {
   return _concat([el], list);
 });

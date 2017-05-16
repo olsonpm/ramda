@@ -30,7 +30,7 @@ var reduce = require('./reduce');
  *      isQueenOfSpades({rank: 'Q', suit: '♣︎'}); //=> false
  *      isQueenOfSpades({rank: 'Q', suit: '♠︎'}); //=> true
  */
-module.exports = _curry1(function allPass(preds) {
+module.exports = /* #__PURE__ */_curry1(function allPass(preds) {
   return curryN(reduce(max, 0, pluck('length', preds)), function() {
     var idx = 0;
     var len = preds.length;

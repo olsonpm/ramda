@@ -27,7 +27,7 @@ var _xfindLast = require('./internal/_xfindLast');
  *      R.findLast(R.propEq('a', 1))(xs); //=> {a: 1, b: 1}
  *      R.findLast(R.propEq('a', 4))(xs); //=> undefined
  */
-module.exports = _curry2(_dispatchable('findLast', _xfindLast, function findLast(fn, list) {
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable('findLast', _xfindLast, function findLast(fn, list) {
   var idx = list.length - 1;
   while (idx >= 0) {
     if (fn(list[idx])) {

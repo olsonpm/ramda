@@ -19,4 +19,4 @@ var _makeFlat = require('./internal/_makeFlat');
  *      R.flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
  *      //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  */
-module.exports = _curry1(_makeFlat(true));
+module.exports = /* #__PURE__ */_curry1(/* #__PURE__ */_makeFlat(true));

@@ -20,7 +20,7 @@ var _isArguments = require('./internal/_isArguments');
  *
  *      R.keys({a: 1, b: 2, c: 3}); //=> ['a', 'b', 'c']
  */
-module.exports = (function() {
+module.exports = /* #__PURE__ */(function() {
   // cover IE < 9 keys issues
   var hasEnumBug = !({toString: null}).propertyIsEnumerable('toString');
   var nonEnumerableProps = ['constructor', 'valueOf', 'isPrototypeOf', 'toString',

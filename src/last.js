@@ -21,4 +21,4 @@ var nth = require('./nth');
  *      R.last('abc'); //=> 'c'
  *      R.last(''); //=> ''
  */
-module.exports = nth(-1);
+module.exports = /* #__PURE__ */nth(-1);

@@ -20,6 +20,6 @@ var _curry2 = require('./internal/_curry2');
  *      R.and(false, true); //=> false
  *      R.and(false, false); //=> false
  */
-module.exports = _curry2(function and(a, b) {
+module.exports = /* #__PURE__ */_curry2(function and(a, b) {
   return a && b;
 });

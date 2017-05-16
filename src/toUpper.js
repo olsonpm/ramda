@@ -16,4 +16,4 @@ var invoker = require('./invoker');
  *
  *      R.toUpper('abc'); //=> 'ABC'
  */
-module.exports = invoker(0, 'toUpperCase');
+module.exports = /* #__PURE__ */invoker(0, 'toUpperCase');

@@ -34,7 +34,7 @@ var _isInteger = require('./internal/_isInteger');
  *      seventeenMod(4);  //=> 1
  *      seventeenMod(10); //=> 7
  */
-module.exports = _curry2(function mathMod(m, p) {
+module.exports = /* #__PURE__ */_curry2(function mathMod(m, p) {
   if (!_isInteger(m)) { return NaN; }
   if (!_isInteger(p) || p < 1) { return NaN; }
   return ((m % p) + p) % p;

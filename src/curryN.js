@@ -46,7 +46,7 @@ var _curryN = require('./internal/_curryN');
  *      var g = f(3);
  *      g(4); //=> 10
  */
-module.exports = _curry2(function curryN(length, fn) {
+module.exports = /* #__PURE__ */_curry2(function curryN(length, fn) {
   if (length === 1) {
     return _curry1(fn);
   }

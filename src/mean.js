@@ -17,6 +17,6 @@ var sum = require('./sum');
  *      R.mean([2, 7, 9]); //=> 6
  *      R.mean([]); //=> NaN
  */
-module.exports = _curry1(function mean(list) {
+module.exports = /* #__PURE__ */_curry1(function mean(list) {
   return sum(list) / list.length;
 });

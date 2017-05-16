@@ -24,6 +24,6 @@ var _curry2 = require('./internal/_curry2');
  *      R.is(Object, 's'); //=> false
  *      R.is(Number, {}); //=> false
  */
-module.exports = _curry2(function is(Ctor, val) {
+module.exports = /* #__PURE__ */_curry2(function is(Ctor, val) {
   return val != null && val.constructor === Ctor || val instanceof Ctor;
 });

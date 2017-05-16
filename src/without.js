@@ -23,6 +23,6 @@ var reject = require('./reject');
  *
  *      R.without([1, 2], [1, 2, 1, 3, 4]); //=> [3, 4]
  */
-module.exports = _curry2(function(xs, list) {
+module.exports = /* #__PURE__ */_curry2(function(xs, list) {
   return reject(flip(_contains)(xs), list);
 });

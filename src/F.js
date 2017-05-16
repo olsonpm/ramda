@@ -16,4 +16,4 @@ var always = require('./always');
  *
  *      R.F(); //=> false
  */
-module.exports = always(false);
+module.exports = /* #__PURE__ */always(false);

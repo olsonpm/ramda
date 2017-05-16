@@ -21,6 +21,6 @@ var _curry3 = require('./internal/_curry3');
  *      // Use the "g" (global) flag to replace all occurrences:
  *      R.replace(/foo/g, 'bar', 'foo foo foo'); //=> 'bar bar bar'
  */
-module.exports = _curry3(function replace(regex, replacement, str) {
+module.exports = /* #__PURE__ */_curry3(function replace(regex, replacement, str) {
   return str.replace(regex, replacement);
 });

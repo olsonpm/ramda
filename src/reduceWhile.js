@@ -32,7 +32,7 @@ var _reduced = require('./internal/_reduced');
  *      var ys = [2, 4, 6]
  *      R.reduceWhile(isOdd, R.add, 111, ys); //=> 111
  */
-module.exports = _curryN(4, [], function _reduceWhile(pred, fn, a, list) {
+module.exports = /* #__PURE__ */_curryN(4, [], function _reduceWhile(pred, fn, a, list) {
   return _reduce(function(acc, x) {
     return pred(acc, x) ? fn(acc, x) : _reduced(acc);
   }, a, list);

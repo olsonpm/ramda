@@ -27,7 +27,7 @@ var _isString = require('./internal/_isString');
  *      R.empty('unicorns');    //=> ''
  *      R.empty({x: 1, y: 2});  //=> {}
  */
-module.exports = _curry1(function empty(x) {
+module.exports = /* #__PURE__ */_curry1(function empty(x) {
   return (
     (x != null && typeof x.empty === 'function') ?
       x.empty() :

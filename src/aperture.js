@@ -27,4 +27,4 @@ var _xaperture = require('./internal/_xaperture');
  *      R.aperture(3, [1, 2, 3, 4, 5]); //=> [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
  *      R.aperture(7, [1, 2, 3, 4, 5]); //=> []
  */
-module.exports = _curry2(_dispatchable('aperture', _xaperture, _aperture));
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable('aperture', _xaperture, _aperture));

@@ -16,4 +16,4 @@ var add = require('./add');
  *
  *      R.inc(42); //=> 43
  */
-module.exports = add(1);
+module.exports = /* #__PURE__ */add(1);

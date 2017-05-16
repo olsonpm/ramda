@@ -17,6 +17,6 @@ var _isNumber = require('./internal/_isNumber');
  *      R.length([]); //=> 0
  *      R.length([1, 2, 3]); //=> 3
  */
-module.exports = _curry1(function length(list) {
+module.exports = /* #__PURE__ */_curry1(function length(list) {
   return list != null && _isNumber(list.length) ? list.length : NaN;
 });

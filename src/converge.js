@@ -35,7 +35,7 @@ var reduce = require('./reduce');
  *      R.converge(add3, [multiply, add, subtract])(1, 2); //=> 4
  * @symb R.converge(f, [g, h])(a, b) = f(g(a, b), h(a, b))
  */
-module.exports = _curry2(function converge(after, fns) {
+module.exports = /* #__PURE__ */_curry2(function converge(after, fns) {
   return curryN(reduce(max, 0, pluck('length', fns)), function() {
     var args = arguments;
     var context = this;

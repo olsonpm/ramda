@@ -21,4 +21,4 @@ var _curry2 = require('./internal/_curry2');
  *      R.contains(4, [1, 2, 3]); //=> false
  *      R.contains([42], [[42]]); //=> true
  */
-module.exports = _curry2(_contains);
+module.exports = /* #__PURE__ */_curry2(_contains);

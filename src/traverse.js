@@ -29,6 +29,6 @@ var sequence = require('./sequence');
  *      R.traverse(Maybe.of, safeDiv(10), [2, 4, 5]); //=> Just([5, 2.5, 2])
  *      R.traverse(Maybe.of, safeDiv(10), [2, 0, 5]); //=> Nothing
  */
-module.exports = _curry3(function traverse(of, f, traversable) {
+module.exports = /* #__PURE__ */_curry3(function traverse(of, f, traversable) {
   return sequence(of, map(f, traversable));
 });

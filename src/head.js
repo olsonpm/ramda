@@ -22,4 +22,4 @@ var nth = require('./nth');
  *      R.head('abc'); //=> 'a'
  *      R.head(''); //=> ''
  */
-module.exports = nth(0);
+module.exports = /* #__PURE__ */nth(0);

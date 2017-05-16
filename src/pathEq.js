@@ -26,6 +26,6 @@ var path = require('./path');
  *      var isFamous = R.pathEq(['address', 'zipCode'], 90210);
  *      R.filter(isFamous, users); //=> [ user1 ]
  */
-module.exports = _curry3(function pathEq(_path, val, obj) {
+module.exports = /* #__PURE__ */_curry3(function pathEq(_path, val, obj) {
   return equals(path(_path, obj), val);
 });

@@ -27,7 +27,7 @@ var last = require('./last');
  *      var l = [1, -1, 1, 3, 4, -4, -4, -5, 5, 3, 3];
  *      R.dropRepeatsWith(R.eqBy(Math.abs), l); //=> [1, 3, 4, -5, 3]
  */
-module.exports = _curry2(_dispatchable('dropRepeatsWith', _xdropRepeatsWith, function dropRepeatsWith(pred, list) {
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable('dropRepeatsWith', _xdropRepeatsWith, function dropRepeatsWith(pred, list) {
   var result = [];
   var idx = 1;
   var len = list.length;

@@ -26,7 +26,7 @@ var _slice = require('./internal/_slice');
  *      R.unapply(JSON.stringify)(1, 2, 3); //=> '[1,2,3]'
  * @symb R.unapply(f)(a, b) = f([a, b])
  */
-module.exports = _curry1(function unapply(fn) {
+module.exports = /* #__PURE__ */_curry1(function unapply(fn) {
   return function() {
     return fn(_slice(arguments));
   };

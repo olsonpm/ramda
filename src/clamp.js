@@ -20,7 +20,7 @@ var _curry3 = require('./internal/_curry3');
  *      R.clamp(1, 10, 11) // => 10
  *      R.clamp(1, 10, 4)  // => 4
  */
-module.exports = _curry3(function clamp(min, max, value) {
+module.exports = /* #__PURE__ */_curry3(function clamp(min, max, value) {
   if (min > max) {
     throw new Error('min must not be greater than max in clamp(min, max, value)');
   }

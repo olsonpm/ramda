@@ -26,4 +26,4 @@ var _xdropLastWhile = require('./internal/_xdropLastWhile');
  *
  *      R.dropLastWhile(lteThree, [1, 2, 3, 4, 3, 2, 1]); //=> [1, 2, 3, 4]
  */
-module.exports = _curry2(_dispatchable('dropLastWhile', _xdropLastWhile, _dropLastWhile));
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */_dispatchable('dropLastWhile', _xdropLastWhile, _dropLastWhile));

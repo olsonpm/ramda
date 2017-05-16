@@ -19,7 +19,7 @@ var _curry2 = require('./internal/_curry2');
  *
  *      R.intersperse('n', ['ba', 'a', 'a']); //=> ['ba', 'n', 'a', 'n', 'a']
  */
-module.exports = _curry2(_checkForMethod('intersperse', function intersperse(separator, list) {
+module.exports = /* #__PURE__ */_curry2(/* #__PURE__ */_checkForMethod('intersperse', function intersperse(separator, list) {
   var out = [];
   var idx = 0;
   var length = list.length;

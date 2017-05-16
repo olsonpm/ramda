@@ -21,4 +21,4 @@ var invoker = require('./invoker');
  *
  *      R.split('.', 'a.b.c.xyz.d'); //=> ['a', 'b', 'c', 'xyz', 'd']
  */
-module.exports = invoker(1, 'split');
+module.exports = /* #__PURE__ */invoker(1, 'split');

@@ -22,6 +22,6 @@ var _curry2 = require('./internal/_curry2');
  *      R.append('tests', []); //=> ['tests']
  *      R.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
-module.exports = _curry2(function append(el, list) {
+module.exports = /* #__PURE__ */_curry2(function append(el, list) {
   return _concat(list, [el]);
 });

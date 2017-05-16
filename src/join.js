@@ -20,4 +20,4 @@ var invoker = require('./invoker');
  *      spacer(['a', 2, 3.4]);   //=> 'a 2 3.4'
  *      R.join('|', [1, 2, 3]);    //=> '1|2|3'
  */
-module.exports = invoker(1, 'join');
+module.exports = /* #__PURE__ */invoker(1, 'join');

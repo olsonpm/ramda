@@ -22,6 +22,6 @@ var _curry2 = require('./internal/_curry2');
  *      R.match(/a/, 'b'); //=> []
  *      R.match(/a/, null); //=> TypeError: null does not have a method named "match"
  */
-module.exports = _curry2(function match(rx, str) {
+module.exports = /* #__PURE__ */_curry2(function match(rx, str) {
   return str.match(rx) || [];
 });

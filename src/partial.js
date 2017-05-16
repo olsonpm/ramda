@@ -30,4 +30,4 @@ var _createPartialApplicator = require('./internal/_createPartialApplicator');
  *      sayHelloToMs('Jane', 'Jones'); //=> 'Hello, Ms. Jane Jones!'
  * @symb R.partial(f, [a, b])(c, d) = f(a, b, c, d)
  */
-module.exports = _createPartialApplicator(_concat);
+module.exports = /* #__PURE__ */_createPartialApplicator(_concat);

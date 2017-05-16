@@ -26,4 +26,4 @@ var _curry2 = require('./internal/_curry2');
  *      isOdd(42); //=> 0
  *      isOdd(21); //=> 1
  */
-module.exports = _curry2(function modulo(a, b) { return a % b; });
+module.exports = /* #__PURE__ */_curry2(function modulo(a, b) { return a % b; });

@@ -16,4 +16,4 @@ var add = require('./add');
  *
  *      R.dec(42); //=> 41
  */
-module.exports = add(-1);
+module.exports = /* #__PURE__ */add(-1);

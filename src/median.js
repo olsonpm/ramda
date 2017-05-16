@@ -19,7 +19,7 @@ var mean = require('./mean');
  *      R.median([7, 2, 10, 9]); //=> 8
  *      R.median([]); //=> NaN
  */
-module.exports = _curry1(function median(list) {
+module.exports = /* #__PURE__ */_curry1(function median(list) {
   var len = list.length;
   if (len === 0) {
     return NaN;

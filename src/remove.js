@@ -22,7 +22,7 @@ var _slice = require('./internal/_slice');
  *
  *      R.remove(2, 3, [1,2,3,4,5,6,7,8]); //=> [1,2,6,7,8]
  */
-module.exports = _curry3(function remove(start, count, list) {
+module.exports = /* #__PURE__ */_curry3(function remove(start, count, list) {
   return _concat(_slice(list, 0, Math.min(start, list.length)),
                  _slice(list, Math.min(list.length, start + count)));
 });

@@ -29,6 +29,6 @@ var nAry = require('./nAry');
  *      takesTwoArgs(1, 2, 3); //=> [1, 2, undefined]
  * @symb R.binary(f)(a, b, c) = f(a, b)
  */
-module.exports = _curry1(function binary(fn) {
+module.exports = /* #__PURE__ */_curry1(function binary(fn) {
   return nAry(2, fn);
 });

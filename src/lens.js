@@ -25,7 +25,7 @@ var map = require('./map');
  *      R.set(xLens, 4, {x: 1, y: 2});          //=> {x: 4, y: 2}
  *      R.over(xLens, R.negate, {x: 1, y: 2});  //=> {x: -1, y: 2}
  */
-module.exports = _curry2(function lens(getter, setter) {
+module.exports = /* #__PURE__ */_curry2(function lens(getter, setter) {
   return function(toFunctorFn) {
     return function(target) {
       return map(

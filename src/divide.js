@@ -23,4 +23,4 @@ var _curry2 = require('./internal/_curry2');
  *      var reciprocal = R.divide(1);
  *      reciprocal(4);   //=> 0.25
  */
-module.exports = _curry2(function divide(a, b) { return a / b; });
+module.exports = /* #__PURE__ */_curry2(function divide(a, b) { return a / b; });
