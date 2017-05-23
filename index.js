@@ -237,7 +237,10 @@ import zip from './src/zip';
 import zipObj from './src/zipObj';
 import zipWith from './src/zipWith';
 
-export default {
+import * as ramda from './index'
+export default ramda
+
+export {
   F,
   T,
   __,
